@@ -81,4 +81,184 @@
 <rect x="24" y="914" width="900" height="52" rx="4" fill="#f8f9f9" stroke="#d5dbdb"/>
 <text x="38" y="936" font-size="12.5" font-family="Arial" fill="#1b2631">Researchers shown: 14 | Categories shown: 8 | Cross-domain bridges: 4</text>
 <text x="38" y="955" font-size="11" font-family="Arial" fill="#5d6d7e">Dashed ring = bridge researcher. Highlighted: Shannon, Nyquist, Tukey, Hamming.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="840">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="36" font-size="28" font-family="Arial" font-weight="bold" fill="#17202a">Bell Labs Innovation Map</text>
+<text x="24" y="60" font-size="14" font-family="Arial" fill="#5d6d7e">Clean bipartite view: Researchers on left, Categories on right, bridges shown by multiple links.</text>
+<path d="M220.0,110.0 Q620.0,182.8 1020.0,318.0" stroke="#aeb6bf" fill="none" stroke-width="2.4" opacity="0.55"/>
+<path d="M220.0,110.0 Q620.0,208.7 1020.0,392.0" stroke="#aeb6bf" fill="none" stroke-width="2.4" opacity="0.55"/>
+<path d="M220.0,110.0 Q620.0,286.4 1020.0,614.0" stroke="#aeb6bf" fill="none" stroke-width="2.4" opacity="0.55"/>
+<path d="M220.0,156.0 Q620.0,212.7 1020.0,318.0" stroke="#aeb6bf" fill="none" stroke-width="1.2" opacity="0.26"/>
+<path d="M220.0,202.0 Q620.0,320.3 1020.0,540.0" stroke="#aeb6bf" fill="none" stroke-width="2.4" opacity="0.55"/>
+<path d="M220.0,202.0 Q620.0,372.1 1020.0,688.0" stroke="#aeb6bf" fill="none" stroke-width="2.4" opacity="0.55"/>
+<path d="M220.0,248.0 Q620.0,246.6 1020.0,244.0" stroke="#aeb6bf" fill="none" stroke-width="1.2" opacity="0.26"/>
+<path d="M220.0,294.0 Q620.0,250.6 1020.0,170.0" stroke="#aeb6bf" fill="none" stroke-width="1.2" opacity="0.26"/>
+<path d="M220.0,340.0 Q620.0,358.2 1020.0,392.0" stroke="#aeb6bf" fill="none" stroke-width="1.2" opacity="0.26"/>
+<path d="M220.0,386.0 Q620.0,414.0 1020.0,466.0" stroke="#aeb6bf" fill="none" stroke-width="1.2" opacity="0.26"/>
+<path d="M220.0,432.0 Q620.0,392.1 1020.0,318.0" stroke="#aeb6bf" fill="none" stroke-width="2.4" opacity="0.55"/>
+<path d="M220.0,432.0 Q620.0,495.7 1020.0,614.0" stroke="#aeb6bf" fill="none" stroke-width="2.4" opacity="0.55"/>
+<path d="M220.0,478.0 Q620.0,396.1 1020.0,244.0" stroke="#aeb6bf" fill="none" stroke-width="1.2" opacity="0.26"/>
+<path d="M220.0,524.0 Q620.0,426.0 1020.0,244.0" stroke="#aeb6bf" fill="none" stroke-width="1.2" opacity="0.26"/>
+<path d="M220.0,570.0 Q620.0,455.9 1020.0,244.0" stroke="#aeb6bf" fill="none" stroke-width="1.2" opacity="0.26"/>
+<path d="M220.0,616.0 Q620.0,459.9 1020.0,170.0" stroke="#aeb6bf" fill="none" stroke-width="1.2" opacity="0.26"/>
+<path d="M220.0,662.0 Q620.0,671.1 1020.0,688.0" stroke="#aeb6bf" fill="none" stroke-width="1.2" opacity="0.26"/>
+<path d="M220.0,708.0 Q620.0,571.5 1020.0,318.0" stroke="#aeb6bf" fill="none" stroke-width="2.4" opacity="0.55"/>
+<path d="M220.0,708.0 Q620.0,675.1 1020.0,614.0" stroke="#aeb6bf" fill="none" stroke-width="2.4" opacity="0.55"/>
+<circle cx="220.0" cy="110.0" r="10" fill="#fef9e7" stroke="#1b2631" stroke-width="2"/>
+<circle cx="220.0" cy="110.0" r="14" fill="none" stroke="#5dade2" stroke-width="1.3" stroke-dasharray="3 2"/>
+<text x="236.0" y="114.0" font-size="11" font-family="Arial" fill="#1b2631">John Tukey (7 papers, 3 domains)</text>
+<circle cx="220.0" cy="156.0" r="10" fill="#fef9e7" stroke="#1b2631" stroke-width="2"/>
+<text x="236.0" y="160.0" font-size="11" font-family="Arial" fill="#1b2631">Claude Shannon (5 papers, 1 domains)</text>
+<circle cx="220.0" cy="202.0" r="7" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<circle cx="220.0" cy="202.0" r="11" fill="none" stroke="#5dade2" stroke-width="1.3" stroke-dasharray="3 2"/>
+<text x="236.0" y="206.0" font-size="11" font-family="Arial" fill="#1b2631">John Pierce (5 papers, 2 domains)</text>
+<circle cx="220.0" cy="248.0" r="7" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<text x="236.0" y="252.0" font-size="11" font-family="Arial" fill="#1b2631">Ken Thompson (5 papers, 1 domains)</text>
+<circle cx="220.0" cy="294.0" r="7" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<text x="236.0" y="298.0" font-size="11" font-family="Arial" fill="#1b2631">William Shockley (5 papers, 1 domains)</text>
+<circle cx="220.0" cy="340.0" r="7" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<text x="236.0" y="344.0" font-size="11" font-family="Arial" fill="#1b2631">Benoit Mandelbrot (4 papers, 1 domains)</text>
+<circle cx="220.0" cy="386.0" r="7" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<text x="236.0" y="390.0" font-size="11" font-family="Arial" fill="#1b2631">Harald Friis (4 papers, 1 domains)</text>
+<circle cx="220.0" cy="432.0" r="10" fill="#fef9e7" stroke="#1b2631" stroke-width="2"/>
+<circle cx="220.0" cy="432.0" r="14" fill="none" stroke="#5dade2" stroke-width="1.3" stroke-dasharray="3 2"/>
+<text x="236.0" y="436.0" font-size="11" font-family="Arial" fill="#1b2631">Harry Nyquist (4 papers, 2 domains)</text>
+<circle cx="220.0" cy="478.0" r="7" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<text x="236.0" y="482.0" font-size="11" font-family="Arial" fill="#1b2631">Alfred Aho (3 papers, 1 domains)</text>
+<circle cx="220.0" cy="524.0" r="7" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<text x="236.0" y="528.0" font-size="11" font-family="Arial" fill="#1b2631">Brian Kernighan (3 papers, 1 domains)</text>
+<circle cx="220.0" cy="570.0" r="7" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<text x="236.0" y="574.0" font-size="11" font-family="Arial" fill="#1b2631">Dennis Ritchie (3 papers, 1 domains)</text>
+<circle cx="220.0" cy="616.0" r="7" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<text x="236.0" y="620.0" font-size="11" font-family="Arial" fill="#1b2631">John Bardeen (3 papers, 1 domains)</text>
+<circle cx="220.0" cy="662.0" r="7" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<text x="236.0" y="666.0" font-size="11" font-family="Arial" fill="#1b2631">Rudolf Kompfner (3 papers, 1 domains)</text>
+<circle cx="220.0" cy="708.0" r="10" fill="#fef9e7" stroke="#1b2631" stroke-width="2"/>
+<circle cx="220.0" cy="708.0" r="14" fill="none" stroke="#5dade2" stroke-width="1.3" stroke-dasharray="3 2"/>
+<text x="236.0" y="712.0" font-size="11" font-family="Arial" fill="#1b2631">Richard Hamming (2 papers, 2 domains)</text>
+<circle cx="1020.0" cy="170.0" r="14" fill="#d62728" stroke="#ffffff" stroke-width="1"/>
+<text x="1040.0" y="174.0" font-size="12" font-family="Arial" fill="#1b2631">Semiconductor Physics (15 papers)</text>
+<circle cx="1020.0" cy="244.0" r="14" fill="#2ca02c" stroke="#ffffff" stroke-width="1"/>
+<text x="1040.0" y="248.0" font-size="12" font-family="Arial" fill="#1b2631">Computing Systems (13 papers)</text>
+<circle cx="1020.0" cy="318.0" r="14" fill="#1f77b4" stroke="#ffffff" stroke-width="1"/>
+<text x="1040.0" y="322.0" font-size="12" font-family="Arial" fill="#1b2631">Information Theory (12 papers)</text>
+<circle cx="1020.0" cy="392.0" r="14" fill="#8c564b" stroke="#ffffff" stroke-width="1"/>
+<text x="1040.0" y="396.0" font-size="12" font-family="Arial" fill="#1b2631">Mathematics Statistics (8 papers)</text>
+<circle cx="1020.0" cy="466.0" r="14" fill="#9467bd" stroke="#ffffff" stroke-width="1"/>
+<text x="1040.0" y="470.0" font-size="12" font-family="Arial" fill="#1b2631">Radio Astronomy (7 papers)</text>
+<circle cx="1020.0" cy="540.0" r="14" fill="#ff7f0e" stroke="#ffffff" stroke-width="1"/>
+<text x="1040.0" y="544.0" font-size="12" font-family="Arial" fill="#1b2631">Photonics Laser (6 papers)</text>
+<circle cx="1020.0" cy="614.0" r="14" fill="#17becf" stroke="#ffffff" stroke-width="1"/>
+<text x="1040.0" y="618.0" font-size="12" font-family="Arial" fill="#1b2631">Network Theory (5 papers)</text>
+<circle cx="1020.0" cy="688.0" r="14" fill="#e377c2" stroke="#ffffff" stroke-width="1"/>
+<text x="1040.0" y="692.0" font-size="12" font-family="Arial" fill="#1b2631">Satellite Communications (5 papers)</text>
+<rect x="24" y="760" width="860" height="62" rx="4" fill="#f8f9f9" stroke="#d5dbdb"/>
+<text x="38" y="784" font-size="12.5" font-family="Arial" fill="#1b2631">Researchers shown: 14 | Categories shown: 8 | Cross-domain bridges: 4</text>
+<text x="38" y="804" font-size="11" font-family="Arial" fill="#5d6d7e">Dashed ring = bridge researcher. Highlighted: Shannon, Nyquist, Tukey, Hamming.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="780">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="34" font-size="27" font-family="Arial" font-weight="bold" fill="#17202a">Bell Labs Innovation Map</text>
+<text x="24" y="59" font-size="14" font-family="Arial" fill="#5d6d7e">Researchers connected to research domains; multi-domain people are cross-domain bridges.</text>
+<line x1="630.0" y1="87.0" x2="753.7" y2="266.3" stroke="#95a5a6" stroke-width="1.1" opacity="0.25"/>
+<line x1="737.7" y1="94.0" x2="753.7" y2="513.7" stroke="#95a5a6" stroke-width="1.1" opacity="0.25"/>
+<line x1="840.2" y1="139.5" x2="753.7" y2="266.3" stroke="#95a5a6" stroke-width="1.1" opacity="0.25"/>
+<line x1="892.4" y1="238.5" x2="805.0" y2="390.0" stroke="#95a5a6" stroke-width="1.1" opacity="0.25"/>
+<line x1="940.2" y1="335.3" x2="630.0" y2="215.0" stroke="#95a5a6" stroke-width="1.1" opacity="0.25"/>
+<line x1="952.0" y1="446.8" x2="753.7" y2="266.3" stroke="#95a5a6" stroke-width="1.1" opacity="0.25"/>
+<line x1="892.4" y1="541.5" x2="630.0" y2="565.0" stroke="#95a5a6" stroke-width="1.1" opacity="0.25"/>
+<line x1="832.5" y1="631.3" x2="805.0" y2="390.0" stroke="#95a5a6" stroke-width="2.2" opacity="0.52"/>
+<line x1="832.5" y1="631.3" x2="455.0" y2="390.0" stroke="#95a5a6" stroke-width="2.2" opacity="0.52"/>
+<line x1="741.8" y1="697.3" x2="630.0" y2="215.0" stroke="#95a5a6" stroke-width="1.1" opacity="0.25"/>
+<line x1="630.0" y1="693.0" x2="506.3" y2="513.7" stroke="#95a5a6" stroke-width="2.2" opacity="0.52"/>
+<line x1="630.0" y1="693.0" x2="506.3" y2="266.3" stroke="#95a5a6" stroke-width="2.2" opacity="0.52"/>
+<line x1="522.3" y1="686.0" x2="805.0" y2="390.0" stroke="#95a5a6" stroke-width="2.2" opacity="0.52"/>
+<line x1="522.3" y1="686.0" x2="753.7" y2="513.7" stroke="#95a5a6" stroke-width="2.2" opacity="0.52"/>
+<line x1="522.3" y1="686.0" x2="455.0" y2="390.0" stroke="#95a5a6" stroke-width="2.2" opacity="0.52"/>
+<line x1="419.8" y1="640.5" x2="630.0" y2="565.0" stroke="#95a5a6" stroke-width="1.1" opacity="0.25"/>
+<line x1="367.6" y1="541.5" x2="753.7" y2="266.3" stroke="#95a5a6" stroke-width="1.1" opacity="0.25"/>
+<line x1="319.8" y1="444.7" x2="630.0" y2="215.0" stroke="#95a5a6" stroke-width="1.1" opacity="0.25"/>
+<line x1="308.0" y1="333.2" x2="805.0" y2="390.0" stroke="#95a5a6" stroke-width="2.2" opacity="0.52"/>
+<line x1="308.0" y1="333.2" x2="455.0" y2="390.0" stroke="#95a5a6" stroke-width="2.2" opacity="0.52"/>
+<line x1="367.6" y1="238.5" x2="506.3" y2="266.3" stroke="#95a5a6" stroke-width="1.1" opacity="0.25"/>
+<line x1="427.5" y1="148.7" x2="630.0" y2="215.0" stroke="#95a5a6" stroke-width="1.1" opacity="0.25"/>
+<line x1="518.2" y1="82.7" x2="630.0" y2="215.0" stroke="#95a5a6" stroke-width="1.1" opacity="0.25"/>
+<circle cx="630.0" cy="215.0" r="28" fill="#d62728" opacity="0.95"/>
+<text x="630.0" y="219.0" text-anchor="middle" font-size="10" font-family="Arial" fill="#ffffff">semiconductor physics</text>
+<circle cx="753.7" cy="266.3" r="28" fill="#2ca02c" opacity="0.95"/>
+<text x="753.7" y="270.3" text-anchor="middle" font-size="10" font-family="Arial" fill="#ffffff">computing systems</text>
+<circle cx="805.0" cy="390.0" r="28" fill="#1f77b4" opacity="0.95"/>
+<text x="805.0" y="394.0" text-anchor="middle" font-size="10" font-family="Arial" fill="#ffffff">information theory</text>
+<circle cx="753.7" cy="513.7" r="28" fill="#8c564b" opacity="0.95"/>
+<text x="753.7" y="517.7" text-anchor="middle" font-size="10" font-family="Arial" fill="#ffffff">mathematics statistics</text>
+<circle cx="630.0" cy="565.0" r="28" fill="#9467bd" opacity="0.95"/>
+<text x="630.0" y="569.0" text-anchor="middle" font-size="10" font-family="Arial" fill="#ffffff">radio astronomy</text>
+<circle cx="506.3" cy="513.7" r="28" fill="#ff7f0e" opacity="0.95"/>
+<text x="506.3" y="517.7" text-anchor="middle" font-size="10" font-family="Arial" fill="#ffffff">photonics laser</text>
+<circle cx="455.0" cy="390.0" r="28" fill="#17becf" opacity="0.95"/>
+<text x="455.0" y="394.0" text-anchor="middle" font-size="10" font-family="Arial" fill="#ffffff">network theory</text>
+<circle cx="506.3" cy="266.3" r="28" fill="#e377c2" opacity="0.95"/>
+<text x="506.3" y="270.3" text-anchor="middle" font-size="10" font-family="Arial" fill="#ffffff">satellite communications</text>
+<circle cx="630.0" cy="87.0" r="10" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<rect x="642.0" y="75.0" width="190" height="17" rx="3" fill="#ffffff" opacity="0.9"/>
+<text x="646.0" y="87.5" font-size="10" font-family="Arial" fill="#1b2631">Alfred Aho (3p/1d)</text>
+<circle cx="737.7" cy="94.0" r="10" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<rect x="749.7" y="82.0" width="190" height="17" rx="3" fill="#ffffff" opacity="0.9"/>
+<text x="753.7" y="94.5" font-size="10" font-family="Arial" fill="#1b2631">Benoit Mandelbrot (4p/1d)</text>
+<circle cx="840.2" cy="139.5" r="10" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<rect x="852.2" y="127.5" width="190" height="17" rx="3" fill="#ffffff" opacity="0.9"/>
+<text x="856.2" y="140.0" font-size="10" font-family="Arial" fill="#1b2631">Brian Kernighan (3p/1d)</text>
+<circle cx="892.4" cy="238.5" r="13" fill="#fef9e7" stroke="#1b2631" stroke-width="2"/>
+<rect x="904.4" y="226.5" width="190" height="17" rx="3" fill="#ffffff" opacity="0.9"/>
+<text x="908.4" y="239.0" font-size="10" font-family="Arial" fill="#1b2631">Claude Shannon (5p/1d)</text>
+<circle cx="940.2" cy="335.3" r="10" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<rect x="952.2" y="323.3" width="190" height="17" rx="3" fill="#ffffff" opacity="0.9"/>
+<text x="956.2" y="335.8" font-size="10" font-family="Arial" fill="#1b2631">Conyers Herring (2p/1d)</text>
+<circle cx="952.0" cy="446.8" r="10" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<rect x="964.0" y="434.8" width="190" height="17" rx="3" fill="#ffffff" opacity="0.9"/>
+<text x="968.0" y="447.3" font-size="10" font-family="Arial" fill="#1b2631">Dennis Ritchie (3p/1d)</text>
+<circle cx="892.4" cy="541.5" r="10" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<rect x="904.4" y="529.5" width="190" height="17" rx="3" fill="#ffffff" opacity="0.9"/>
+<text x="908.4" y="542.0" font-size="10" font-family="Arial" fill="#1b2631">Harald Friis (4p/1d)</text>
+<circle cx="832.5" cy="631.3" r="13" fill="#fef9e7" stroke="#1b2631" stroke-width="2"/>
+<circle cx="832.5" cy="631.3" r="17" fill="none" stroke="#5dade2" stroke-width="1.5" stroke-dasharray="3 2"/>
+<rect x="844.5" y="619.3" width="190" height="17" rx="3" fill="#ffffff" opacity="0.9"/>
+<text x="848.5" y="631.8" font-size="10" font-family="Arial" fill="#1b2631">Harry Nyquist (4p/2d)</text>
+<circle cx="741.8" cy="697.3" r="10" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<rect x="753.8" y="685.3" width="190" height="17" rx="3" fill="#ffffff" opacity="0.9"/>
+<text x="757.8" y="697.8" font-size="10" font-family="Arial" fill="#1b2631">John Bardeen (3p/1d)</text>
+<circle cx="630.0" cy="693.0" r="10" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<circle cx="630.0" cy="693.0" r="14" fill="none" stroke="#5dade2" stroke-width="1.5" stroke-dasharray="3 2"/>
+<rect x="642.0" y="681.0" width="190" height="17" rx="3" fill="#ffffff" opacity="0.9"/>
+<text x="646.0" y="693.5" font-size="10" font-family="Arial" fill="#1b2631">John Pierce (5p/2d)</text>
+<circle cx="522.3" cy="686.0" r="13" fill="#fef9e7" stroke="#1b2631" stroke-width="2"/>
+<circle cx="522.3" cy="686.0" r="17" fill="none" stroke="#5dade2" stroke-width="1.5" stroke-dasharray="3 2"/>
+<rect x="534.3" y="674.0" width="190" height="17" rx="3" fill="#ffffff" opacity="0.9"/>
+<text x="538.3" y="686.5" font-size="10" font-family="Arial" fill="#1b2631">John Tukey (7p/3d)</text>
+<circle cx="419.8" cy="640.5" r="10" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<rect x="431.8" y="628.5" width="190" height="17" rx="3" fill="#ffffff" opacity="0.9"/>
+<text x="435.8" y="641.0" font-size="10" font-family="Arial" fill="#1b2631">Karl Jansky (2p/1d)</text>
+<circle cx="367.6" cy="541.5" r="10" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<rect x="379.6" y="529.5" width="190" height="17" rx="3" fill="#ffffff" opacity="0.9"/>
+<text x="383.6" y="542.0" font-size="10" font-family="Arial" fill="#1b2631">Ken Thompson (5p/1d)</text>
+<circle cx="319.8" cy="444.7" r="10" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<rect x="331.8" y="432.7" width="190" height="17" rx="3" fill="#ffffff" opacity="0.9"/>
+<text x="335.8" y="445.2" font-size="10" font-family="Arial" fill="#1b2631">Philip Anderson (2p/1d)</text>
+<circle cx="308.0" cy="333.2" r="13" fill="#fef9e7" stroke="#1b2631" stroke-width="2"/>
+<circle cx="308.0" cy="333.2" r="17" fill="none" stroke="#5dade2" stroke-width="1.5" stroke-dasharray="3 2"/>
+<rect x="320.0" y="321.2" width="190" height="17" rx="3" fill="#ffffff" opacity="0.9"/>
+<text x="324.0" y="333.7" font-size="10" font-family="Arial" fill="#1b2631">Richard Hamming (2p/2d)</text>
+<circle cx="367.6" cy="238.5" r="10" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<rect x="379.6" y="226.5" width="190" height="17" rx="3" fill="#ffffff" opacity="0.9"/>
+<text x="383.6" y="239.0" font-size="10" font-family="Arial" fill="#1b2631">Rudolf Kompfner (3p/1d)</text>
+<circle cx="427.5" cy="148.7" r="10" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<rect x="439.5" y="136.7" width="190" height="17" rx="3" fill="#ffffff" opacity="0.9"/>
+<text x="443.5" y="149.2" font-size="10" font-family="Arial" fill="#1b2631">Walter Brattain (2p/1d)</text>
+<circle cx="518.2" cy="82.7" r="10" fill="#f8f9f9" stroke="#d5dbdb" stroke-width="2"/>
+<rect x="530.2" y="70.7" width="190" height="17" rx="3" fill="#ffffff" opacity="0.9"/>
+<text x="534.2" y="83.2" font-size="10" font-family="Arial" fill="#1b2631">William Shockley (5p/1d)</text>
+<rect x="24" y="640" width="620" height="116" rx="4" fill="#f8f9f9" stroke="#d5dbdb"/>
+<text x="38" y="667" font-size="13" font-family="Arial" fill="#1b2631">Researchers shown: 18 | Domains shown: 8 | Cross-domain bridges: 4</text>
+<text x="38" y="688" font-size="12" font-family="Arial" fill="#5d6d7e">Dashed outer ring = cross-domain researcher. Thicker links indicate bridge-like domain connections.</text>
+<text x="38" y="709" font-size="12" font-family="Arial" fill="#5d6d7e">Highlighted figures: Shannon, Nyquist, Tukey, Hamming.</text>
+<text x="38" y="730" font-size="11" font-family="Arial" fill="#5d6d7e">Source: papers.csv + researcher_profiles.csv.</text>
 </svg>

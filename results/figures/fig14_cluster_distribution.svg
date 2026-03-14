@@ -27,4 +27,30 @@
 <text x="24" y="476.2" font-size="13" font-family="Arial" fill="#1b2631">Satellite Communications</text>
 <rect x="240" y="462.2" width="220.0" height="41.8" fill="#17becf" rx="4"/>
 <text x="468.0" y="476.2" font-size="12" font-family="Arial" fill="#1b2631">5</text>
+<text x="20" y="28" font-size="22" font-family="Arial" font-weight="bold">Cluster Distribution of Bell Labs Outputs</text>
+<text x="20" y="50" font-size="13" font-family="Arial" fill="#555">Source: data/processed/papers.csv</text>
+<text x="20" y="62.0" font-size="13" font-family="Arial">Semiconductor Physics</text>
+<rect x="220" y="48.0" width="660.0" height="41.8" fill="#1f77b4" rx="4"/>
+<text x="888.0" y="62.0" font-size="12" font-family="Arial">15</text>
+<text x="20" y="115.8" font-size="13" font-family="Arial">Computing Systems</text>
+<rect x="220" y="101.8" width="572.0" height="41.8" fill="#ff7f0e" rx="4"/>
+<text x="800.0" y="115.8" font-size="12" font-family="Arial">13</text>
+<text x="20" y="169.5" font-size="13" font-family="Arial">Information Theory</text>
+<rect x="220" y="155.5" width="528.0" height="41.8" fill="#2ca02c" rx="4"/>
+<text x="756.0" y="169.5" font-size="12" font-family="Arial">12</text>
+<text x="20" y="223.2" font-size="13" font-family="Arial">Mathematics Statistics</text>
+<rect x="220" y="209.2" width="352.0" height="41.8" fill="#d62728" rx="4"/>
+<text x="580.0" y="223.2" font-size="12" font-family="Arial">8</text>
+<text x="20" y="277.0" font-size="13" font-family="Arial">Radio Astronomy</text>
+<rect x="220" y="263.0" width="308.0" height="41.8" fill="#9467bd" rx="4"/>
+<text x="536.0" y="277.0" font-size="12" font-family="Arial">7</text>
+<text x="20" y="330.8" font-size="13" font-family="Arial">Photonics Laser</text>
+<rect x="220" y="316.8" width="264.0" height="41.8" fill="#8c564b" rx="4"/>
+<text x="492.0" y="330.8" font-size="12" font-family="Arial">6</text>
+<text x="20" y="384.5" font-size="13" font-family="Arial">Network Theory</text>
+<rect x="220" y="370.5" width="220.0" height="41.8" fill="#e377c2" rx="4"/>
+<text x="448.0" y="384.5" font-size="12" font-family="Arial">5</text>
+<text x="20" y="438.2" font-size="13" font-family="Arial">Satellite Communications</text>
+<rect x="220" y="424.2" width="220.0" height="41.8" fill="#17becf" rx="4"/>
+<text x="448.0" y="438.2" font-size="12" font-family="Arial">5</text>
 </svg>
