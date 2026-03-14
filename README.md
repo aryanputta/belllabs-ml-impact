@@ -212,28 +212,6 @@ python scripts/verify_environment.py
 | 16 | Directed paper flow network (arrows over time) |
 
 ---
-
-## Science-Fair Style Project Explanation
-
-Imagine you walked up to our booth and asked: *"What is your project?"*
-
-**Short answer:**
-We are studying why Bell Labs produced so many breakthroughs. We turned that question into data and machine learning.
-
-**What we built:**
-1. A cleaned dataset of Bell Labs papers (title, authors, year, citations, topics).
-2. A similarity + hashing system to connect related papers, even across different labels.
-3. A researcher network view showing who collaborates and who bridges ideas.
-4. A machine-learning model that predicts which papers are likely to be high-impact.
-
-**Why it matters:**
-Instead of saying "Bell Labs was special" in a vague way, we measure patterns (topic clusters, similarity links, network roles, model performance) and show evidence for how innovation happened.
-
-**What your figures show:**
-- Cluster distribution: where Bell Labs output concentrated.
-- Hash/similarity graph: which papers are closely linked.
-- Directed paper flow network: how related work flows over time with arrows.
-
 ## Dataset
 
 → Available on **Kaggle**: [`aryanputta/bell-labs-research-corpus`](https://kaggle.com/datasets/aryanputta/bell-labs-research-corpus)
