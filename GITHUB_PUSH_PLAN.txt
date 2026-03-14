@@ -1,0 +1,86 @@
+
+
+
+STEP 4 — ADD TOPICS TO THE REPO
+---------------------------------
+On the GitHub repo page, click the gear icon next to "About" and add these topics:
+  machine-learning
+  bell-labs
+  science-of-science
+  citation-prediction
+  shap
+  gradient-boosting
+  minhash
+  research-impact
+  python
+  ieee
+
+
+STEP 5 — WHAT'S IN THE REPO (what reviewers will see)
+-------------------------------------------------------
+belllabs-ml-impact/
+├── README.md                        ← front page with badges, results table, quickstart
+├── paper/
+│   └── paper.tex                    ← full IEEE paper (Aryan Putta, Ananya Putta, B. Lowe)
+├── src/
+│   ├── ml/
+│   │   ├── features.py              ← feature engineering (structural + network + LSA)
+│   │   ├── train.py                 ← 5-model 5-fold CV
+│   │   └── explain.py               ← SHAP analysis
+│   ├── similarity/
+│   │   └── paper_similarity.py      ← MinHash fingerprints + cosine similarity
+│   ├── researcher/
+│   │   └── researcher_analysis.py   ← archetypes, WHY Bell Labs worked
+│   ├── clustering/                  ← K-Means + hierarchical
+│   ├── network/                     ← co-authorship graph
+│   ├── topics/                      ← TF-IDF + NMF
+│   ├── temporal/                    ← decade analysis
+│   ├── metrics/                     ← h-index, innovation metrics
+│   ├── figures/                     ← generates all 13 figures
+│   └── validation/                  ← Nobel + timeline checks
+├── data/
+│   ├── processed/                   ← all generated CSVs + JSONs
+│   └── kaggle/                      ← files for Kaggle upload
+├── results/
+│   ├── figures/                     ← fig1–fig13 (PNG + PDF)
+│   ├── tables/                      ← 3 metric tables
+│   └── reports/                     ← validation reports
+├── notebooks/
+│   ├── bell_labs_ml_impact.ipynb    ← Colab notebook
+│   └── kaggle_notebook.ipynb        ← Kaggle notebook
+├── tests/
+│   ├── test_pipeline.py             ← 23 unit tests
+│   ├── test_clustering.py           ← 25 clustering tests
+│   └── test_findings.py             ← 20 findings validation tests
+├── run_all_tests.py                 ← runs all 68 tests
+└── requirements.txt
+
+
+STEP 6 — AFTER PUSHING, UPDATE THESE URLS
+-------------------------------------------
+Once pushed, go back and update these with real URLs:
+
+In README.md (and paper.tex):
+  GitHub URL:        https://github.com/YOUR-USERNAME/belllabs-ml-impact
+  Kaggle Dataset:    https://kaggle.com/datasets/YOUR-USERNAME/bell-labs-research-corpus
+  Kaggle Notebook:   https://kaggle.com/YOUR-USERNAME/bell-labs-ml-analysis
+  Colab URL:         (fill in after uploading notebook to Colab)
+
+
+STEP 7 — ADD PAPER PDF TO THE REPO
+-------------------------------------
+Copy your compiled paper.pdf into paper/ and push:
+  cp paper_bell_labs_ml.pdf belllabs-ml-impact/paper/paper.pdf
+  cd belllabs-ml-impact
+  git add paper/paper.pdf
+  git commit -m "Add compiled paper PDF"
+  git push
+
+
+RESUME NOTE
+-----------
+On your resume / LinkedIn, list this as:
+  "Machine Learning for Research Impact Prediction: A Computational Study of Bell Laboratories"
+  Co-authored with Ananya Putta and Benjamin Lowe (Seton Hall University, former Director Bell Labs NA)
+  Published/under review: Scientometrics / PLOS ONE / IEEE Access
+  github.com/aryanputta/belllabs-ml-impact · kaggle.com/datasets/aryanputta/bell-labs-research-corpus

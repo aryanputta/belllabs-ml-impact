@@ -1,0 +1,145 @@
+KAGGLE UPLOAD PLAN
+==================
+Authors: Aryan Putta, Ananya Putta, Benjamin Lowe
+
+
+=========================================================
+PART A — KAGGLE DATASET UPLOAD
+=========================================================
+
+Dataset name: Bell Laboratories Research Corpus (1928–1986)
+Slug:         bell-labs-research-corpus
+
+
+FILES TO UPLOAD (from data/kaggle/ folder — 14 files total):
+--------------------------------------------------------------
+
+DATA FILES:
+  papers.csv                   71 Bell Labs publications
+                               columns: paper_id, title, authors, year, affiliation,
+                               abstract, citations, cluster, keywords, is_bell_labs, num_authors
+
+  researchers.csv              56 researchers with career metadata
+                               columns: researcher_id, name, department, start_year,
+                               end_year, role, affiliation, years_active
+
+  researcher_profiles.csv      ML feature profiles per researcher
+                               columns: name, department, role, career_span, papers,
+                               total_citations, avg_citations, n_domains, collaborators,
+                               betweenness, degree_centrality, eigenvector, is_high_impact,
+                               is_laureate, archetype
+
+  paper_hash_table.csv         MinHash fingerprints
+                               columns: paper_id, fingerprint (SHA-256, 16 chars),
+                               minhash_lsb, title, cluster, year, citations
+
+  similar_paper_pairs.csv      Top cosine-similar paper pairs with cross-domain flag
+                               columns: paper_a, title_a, paper_b, title_b,
+                               similarity, same_cluster
+
+  paper_similarity_matrix.csv  Full 71×71 cosine similarity matrix
+                               (rows and columns = paper_ids)
+
+  cluster_assignments.csv      K-Means + Hierarchical cluster labels per paper
+                               columns: paper_id, title, year, citations, cluster,
+                               kmeans_cluster, hierarchical_cluster, kmeans_domain,
+                               hierarchical_domain
+
+  centrality_metrics.csv       Per-researcher network centrality scores
+                               columns: researcher, department, degree_centrality,
+                               betweenness_centrality, closeness_centrality,
+                               eigenvector_centrality, composite_score
+
+  why_bell_labs_worked.json    5 institutional findings with evidence
+                               (JSON — comparison stats, prediction model, findings text)
+
+  dataset-metadata.json        Kaggle dataset card (description, keywords, resource list)
+
+
+STEP-BY-STEP UPLOAD TO KAGGLE:
+--------------------------------
+1. Go to kaggle.com → click your profile → Datasets → New Dataset
+2. Title:       Bell Laboratories Research Corpus (1928–1986)
+3. Subtitle:    71 publications, 56 researchers, MinHash similarity, archetypes, ML features
+4. Upload ALL 14 files from data/kaggle/
+5. License:     CC0 (public domain)
+6. Description: paste from dataset-metadata.json "description" field
+7. Tags: machine-learning, citation-prediction, bell-labs, research-impact,
+         science-of-science, nlp, minhash, innovation, network-analysis
+8. Click Create
+
+
+WHAT KAGGLE USERS WILL GET:
+-----------------------------
+  papers.csv               → load and explore 71 Bell Labs papers
+  researchers.csv          → career data for 56 scientists
+  researcher_profiles.csv  → ML features ready for training (no preprocessing needed)
+  paper_hash_table.csv     → fingerprints for similarity search
+  similar_paper_pairs.csv  → pre-computed similar pairs
+  paper_similarity_matrix  → full pairwise similarity matrix
+  cluster_assignments.csv  → pre-computed domain cluster labels
+  centrality_metrics.csv   → network centrality rankings
+  why_bell_labs_worked.json → 5 quantitative institutional findings
+
+
+=========================================================
+PART B — KAGGLE NOTEBOOK UPLOAD
+=========================================================
+
+Notebook name: bell-labs-ml-analysis
+File to upload: notebooks/kaggle_notebook.ipynb
+
+
+STEP-BY-STEP:
+--------------
+1. Go to kaggle.com → Code → New Notebook
+2. File → Import Notebook → upload kaggle_notebook.ipynb
+3. In the right panel under "Data", click Add Data
+   → search "bell-labs-research-corpus" → add your dataset
+4. Make sure the dataset path in cell 3 is:
+      /kaggle/input/bell-labs-research-corpus/papers.csv
+5. Run All → verify no errors
+6. Save & Run (top right) → this creates a public version
+7. Share: set to Public
+
+
+WHAT THE KAGGLE NOTEBOOK DOES (5 sections):
+---------------------------------------------
+Section 1: Load + explore dataset (EDA plot)
+Section 2: Feature engineering (structural + network + LSA)
+Section 3: 5-model classification with ROC curves
+Section 4: SHAP feature attribution
+Section 5: Paper MinHash hashing + similarity heatmap
+Section 6: Researcher archetypes + success prediction
+Section 7: Why Bell Labs worked — 5 quantitative findings
+
+
+=========================================================
+PART C — NAMING AND CREDITS
+=========================================================
+
+On your Kaggle profile:
+  Author 1: Aryan Putta       (upload under your account)
+  Author 2: Ananya Putta      (add as collaborator: Datasets → Edit → Collaborators)
+  Advisor:  Benjamin Lowe     (mention in dataset description)
+
+In the dataset description, include:
+  "Dataset companion to: 'Where Does Innovation Come From? A Machine Learning
+  Analysis of Bell Laboratories (1928–1986)' by Aryan Putta, Ananya Putta,
+  and Benjamin Lowe (Seton Hall University, former Director Bell Labs NA)."
+
+
+=========================================================
+PART D — LINKING EVERYTHING
+=========================================================
+
+After all three are uploaded, update these URLs everywhere:
+
+In README.md and paper.tex, replace:
+  YOUR-USERNAME  →  your actual Kaggle/GitHub username
+
+Final URLs will look like:
+  GitHub:    github.com/aryanputta/belllabs-ml-impact
+  Dataset:   kaggle.com/datasets/aryanputta/bell-labs-research-corpus
+  Notebook:  kaggle.com/aryanputta/bell-labs-ml-analysis
+  Colab:     colab.research.google.com/drive/[your-notebook-id]
