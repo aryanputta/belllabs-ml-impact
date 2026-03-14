@@ -1,59 +1,78 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560">
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="620">
 <rect width="100%" height="100%" fill="#ffffff"/>
-<text x="20" y="28" font-size="22" font-family="Arial" font-weight="bold">Hash-Similarity Link Graph (Top Similar Paper Pairs)</text>
-<text x="20" y="50" font-size="13" font-family="Arial" fill="#555">Edges weighted by cosine similarity; node labels include hash prefix.</text>
-<line x1="610.0" y1="270.0" x2="599.7" y2="331.7" stroke="#6baed6" stroke-width="5.32" opacity="0.6"/>
-<line x1="569.9" y1="386.7" x2="523.9" y2="429.1" stroke="#6baed6" stroke-width="4.93" opacity="0.6"/>
-<line x1="466.6" y1="454.2" x2="404.3" y2="459.4" stroke="#6baed6" stroke-width="4.24" opacity="0.6"/>
-<line x1="343.7" y1="444.0" x2="291.3" y2="409.8" stroke="#6baed6" stroke-width="4.23" opacity="0.6"/>
-<line x1="343.7" y1="444.0" x2="252.9" y2="360.4" stroke="#6baed6" stroke-width="4.04" opacity="0.6"/>
-<line x1="232.6" y1="301.3" x2="232.6" y2="238.7" stroke="#6baed6" stroke-width="4.04" opacity="0.6"/>
-<line x1="252.9" y1="179.6" x2="291.3" y2="130.2" stroke="#6baed6" stroke-width="4.04" opacity="0.6"/>
-<line x1="343.7" y1="96.0" x2="404.3" y2="80.6" stroke="#6baed6" stroke-width="3.96" opacity="0.6"/>
-<line x1="232.6" y1="301.3" x2="466.6" y2="85.8" stroke="#6baed6" stroke-width="3.94" opacity="0.6"/>
-<line x1="523.9" y1="110.9" x2="291.3" y2="130.2" stroke="#6baed6" stroke-width="3.82" opacity="0.6"/>
-<line x1="569.9" y1="153.3" x2="599.7" y2="208.3" stroke="#6baed6" stroke-width="3.79" opacity="0.6"/>
-<circle cx="610.0" cy="270.0" r="11" fill="#1f77b4"/>
-<text x="624.0" y="274.0" font-size="10" font-family="Arial">BL0062 (18afc8)</text>
-<circle cx="599.7" cy="331.7" r="11" fill="#1f77b4"/>
-<text x="613.7" y="335.7" font-size="10" font-family="Arial">BL0031 (595256)</text>
-<circle cx="569.9" cy="386.7" r="11" fill="#1f77b4"/>
-<text x="583.9" y="390.7" font-size="10" font-family="Arial">BL0047 (c7bf30)</text>
-<circle cx="523.9" cy="429.1" r="11" fill="#1f77b4"/>
-<text x="537.9" y="433.1" font-size="10" font-family="Arial">BL0048 (67cd80)</text>
-<circle cx="466.6" cy="454.2" r="11" fill="#1f77b4"/>
-<text x="480.6" y="458.2" font-size="10" font-family="Arial">BL0038 (7016d2)</text>
-<circle cx="404.3" cy="459.4" r="11" fill="#1f77b4"/>
-<text x="418.3" y="463.4" font-size="10" font-family="Arial">BL0042 (390043)</text>
-<circle cx="343.7" cy="444.0" r="11" fill="#1f77b4"/>
-<text x="357.7" y="448.0" font-size="10" font-family="Arial">BL0035 (087a35)</text>
-<circle cx="291.3" cy="409.8" r="11" fill="#1f77b4"/>
-<text x="305.3" y="413.8" font-size="10" font-family="Arial">BL0036 (2e62fe)</text>
-<circle cx="252.9" cy="360.4" r="11" fill="#1f77b4"/>
-<text x="266.9" y="364.4" font-size="10" font-family="Arial">BL0034 (f5d103)</text>
-<circle cx="232.6" cy="301.3" r="11" fill="#1f77b4"/>
-<text x="246.6" y="305.3" font-size="10" font-family="Arial">BL0010 (d45d5d)</text>
-<circle cx="232.6" cy="238.7" r="11" fill="#1f77b4"/>
-<text x="246.6" y="242.7" font-size="10" font-family="Arial">BL0060 (704b5f)</text>
-<circle cx="252.9" cy="179.6" r="11" fill="#1f77b4"/>
-<text x="266.9" y="183.6" font-size="10" font-family="Arial">BL0054 (37054d)</text>
-<circle cx="291.3" cy="130.2" r="11" fill="#1f77b4"/>
-<text x="305.3" y="134.2" font-size="10" font-family="Arial">BL0045 (d88f87)</text>
-<circle cx="343.7" cy="96.0" r="11" fill="#1f77b4"/>
-<text x="357.7" y="100.0" font-size="10" font-family="Arial">BL0025 (240bd9)</text>
-<circle cx="404.3" cy="80.6" r="11" fill="#1f77b4"/>
-<text x="418.3" y="84.6" font-size="10" font-family="Arial">BL0022 (cd2c02)</text>
-<circle cx="466.6" cy="85.8" r="11" fill="#1f77b4"/>
-<text x="480.6" y="89.8" font-size="10" font-family="Arial">BL0013 (8e898b)</text>
-<circle cx="523.9" cy="110.9" r="11" fill="#1f77b4"/>
-<text x="537.9" y="114.9" font-size="10" font-family="Arial">BL0044 (0430ad)</text>
-<circle cx="569.9" cy="153.3" r="11" fill="#1f77b4"/>
-<text x="583.9" y="157.3" font-size="10" font-family="Arial">BL0063 (df7c6b)</text>
-<circle cx="599.7" cy="208.3" r="11" fill="#1f77b4"/>
-<text x="613.7" y="212.3" font-size="10" font-family="Arial">BL0050 (c729b2)</text>
-<rect x="20" y="420" width="360" height="110" fill="#f7f7f7" stroke="#ccc"/>
-<text x="30" y="445" font-size="13" font-family="Arial">Total hash records: 71</text>
-<text x="30" y="468" font-size="13" font-family="Arial">Unique fingerprints: 71</text>
-<text x="30" y="491" font-size="13" font-family="Arial">Similar pairs shown: 11</text>
-<text x="30" y="514" font-size="12" font-family="Arial" fill="#555">Use with paper_hash_table.csv + similar_paper_pairs.csv</text>
+<text x="24" y="34" font-size="24" font-family="Arial" font-weight="bold" fill="#17202a">Hash Similarity Links (Highest-Scoring Pairs)</text>
+<text x="24" y="58" font-size="13" font-family="Arial" fill="#5d6d7e">Cleaner component layout with weighted edges and compact node tags.</text>
+<line x1="152.0" y1="680.0" x2="248.0" y2="680.0" stroke="#5499c7" stroke-width="5.39" opacity="0.52"/>
+<line x1="568.0" y1="680.0" x2="472.0" y2="680.0" stroke="#5499c7" stroke-width="5.03" opacity="0.52"/>
+<line x1="568.0" y1="430.0" x2="472.0" y2="430.0" stroke="#5499c7" stroke-width="4.42" opacity="0.52"/>
+<line x1="484.0" y1="242.4" x2="484.0" y2="117.6" stroke="#5499c7" stroke-width="4.41" opacity="0.52"/>
+<line x1="484.0" y1="242.4" x2="592.0" y2="180.0" stroke="#5499c7" stroke-width="4.24" opacity="0.52"/>
+<line x1="272.0" y1="180.0" x2="164.0" y2="117.6" stroke="#5499c7" stroke-width="4.24" opacity="0.52"/>
+<line x1="804.0" y1="117.6" x2="804.0" y2="242.4" stroke="#5499c7" stroke-width="4.24" opacity="0.52"/>
+<line x1="152.0" y1="430.0" x2="248.0" y2="430.0" stroke="#5499c7" stroke-width="4.17" opacity="0.52"/>
+<line x1="272.0" y1="180.0" x2="164.0" y2="242.4" stroke="#5499c7" stroke-width="4.15" opacity="0.52"/>
+<line x1="912.0" y1="180.0" x2="804.0" y2="242.4" stroke="#5499c7" stroke-width="4.04" opacity="0.52"/>
+<line x1="792.0" y1="430.0" x2="888.0" y2="430.0" stroke="#5499c7" stroke-width="4.01" opacity="0.52"/>
+<circle cx="272.0" cy="180.0" r="9.5" fill="#2e86c1" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="280.5" y="158.0" width="112" height="16" rx="3" fill="#ffffff" opacity="0.88"/>
+<text x="284.5" y="168.0" font-size="10" font-family="Arial" fill="#1b2631">BL0010 · d45d5d</text>
+<circle cx="164.0" cy="242.4" r="9.5" fill="#2e86c1" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="172.5" y="220.4" width="112" height="16" rx="3" fill="#ffffff" opacity="0.88"/>
+<text x="176.5" y="230.4" font-size="10" font-family="Arial" fill="#1b2631">BL0013 · 8e898b</text>
+<circle cx="164.0" cy="117.6" r="9.5" fill="#2e86c1" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="172.5" y="95.6" width="112" height="16" rx="3" fill="#ffffff" opacity="0.88"/>
+<text x="176.5" y="105.6" font-size="10" font-family="Arial" fill="#1b2631">BL0060 · 704b5f</text>
+<circle cx="592.0" cy="180.0" r="9.5" fill="#2e86c1" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="600.5" y="158.0" width="112" height="16" rx="3" fill="#ffffff" opacity="0.88"/>
+<text x="604.5" y="168.0" font-size="10" font-family="Arial" fill="#1b2631">BL0034 · f5d103</text>
+<circle cx="484.0" cy="242.4" r="9.5" fill="#2e86c1" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="492.5" y="220.4" width="112" height="16" rx="3" fill="#ffffff" opacity="0.88"/>
+<text x="496.5" y="230.4" font-size="10" font-family="Arial" fill="#1b2631">BL0035 · 087a35</text>
+<circle cx="484.0" cy="117.6" r="9.5" fill="#2e86c1" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="492.5" y="95.6" width="112" height="16" rx="3" fill="#ffffff" opacity="0.88"/>
+<text x="496.5" y="105.6" font-size="10" font-family="Arial" fill="#1b2631">BL0036 · 2e62fe</text>
+<circle cx="912.0" cy="180.0" r="9.5" fill="#2e86c1" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="920.5" y="158.0" width="112" height="16" rx="3" fill="#ffffff" opacity="0.88"/>
+<text x="924.5" y="168.0" font-size="10" font-family="Arial" fill="#1b2631">BL0044 · 0430ad</text>
+<circle cx="804.0" cy="242.4" r="9.5" fill="#2e86c1" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="812.5" y="220.4" width="112" height="16" rx="3" fill="#ffffff" opacity="0.88"/>
+<text x="816.5" y="230.4" font-size="10" font-family="Arial" fill="#1b2631">BL0045 · d88f87</text>
+<circle cx="804.0" cy="117.6" r="9.5" fill="#2e86c1" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="812.5" y="95.6" width="112" height="16" rx="3" fill="#ffffff" opacity="0.88"/>
+<text x="816.5" y="105.6" font-size="10" font-family="Arial" fill="#1b2631">BL0054 · 37054d</text>
+<circle cx="248.0" cy="430.0" r="9.5" fill="#2e86c1" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="256.5" y="408.0" width="112" height="16" rx="3" fill="#ffffff" opacity="0.88"/>
+<text x="260.5" y="418.0" font-size="10" font-family="Arial" fill="#1b2631">BL0022 · cd2c02</text>
+<circle cx="152.0" cy="430.0" r="9.5" fill="#2e86c1" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="160.5" y="408.0" width="112" height="16" rx="3" fill="#ffffff" opacity="0.88"/>
+<text x="164.5" y="418.0" font-size="10" font-family="Arial" fill="#1b2631">BL0025 · 240bd9</text>
+<circle cx="568.0" cy="430.0" r="9.5" fill="#2e86c1" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="576.5" y="408.0" width="112" height="16" rx="3" fill="#ffffff" opacity="0.88"/>
+<text x="580.5" y="418.0" font-size="10" font-family="Arial" fill="#1b2631">BL0038 · 7016d2</text>
+<circle cx="472.0" cy="430.0" r="9.5" fill="#2e86c1" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="480.5" y="408.0" width="112" height="16" rx="3" fill="#ffffff" opacity="0.88"/>
+<text x="484.5" y="418.0" font-size="10" font-family="Arial" fill="#1b2631">BL0042 · 390043</text>
+<circle cx="888.0" cy="430.0" r="9.5" fill="#2e86c1" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="896.5" y="408.0" width="112" height="16" rx="3" fill="#ffffff" opacity="0.88"/>
+<text x="900.5" y="418.0" font-size="10" font-family="Arial" fill="#1b2631">BL0050 · c729b2</text>
+<circle cx="792.0" cy="430.0" r="9.5" fill="#2e86c1" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="800.5" y="408.0" width="112" height="16" rx="3" fill="#ffffff" opacity="0.88"/>
+<text x="804.5" y="418.0" font-size="10" font-family="Arial" fill="#1b2631">BL0063 · df7c6b</text>
+<circle cx="248.0" cy="680.0" r="9.5" fill="#2e86c1" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="256.5" y="658.0" width="112" height="16" rx="3" fill="#ffffff" opacity="0.88"/>
+<text x="260.5" y="668.0" font-size="10" font-family="Arial" fill="#1b2631">BL0031 · 595256</text>
+<circle cx="152.0" cy="680.0" r="9.5" fill="#2e86c1" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="160.5" y="658.0" width="112" height="16" rx="3" fill="#ffffff" opacity="0.88"/>
+<text x="164.5" y="668.0" font-size="10" font-family="Arial" fill="#1b2631">BL0062 · 18afc8</text>
+<circle cx="568.0" cy="680.0" r="9.5" fill="#2e86c1" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="576.5" y="658.0" width="112" height="16" rx="3" fill="#ffffff" opacity="0.88"/>
+<text x="580.5" y="668.0" font-size="10" font-family="Arial" fill="#1b2631">BL0047 · c7bf30</text>
+<circle cx="472.0" cy="680.0" r="9.5" fill="#2e86c1" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="480.5" y="658.0" width="112" height="16" rx="3" fill="#ffffff" opacity="0.88"/>
+<text x="484.5" y="668.0" font-size="10" font-family="Arial" fill="#1b2631">BL0048 · 67cd80</text>
+<rect x="24" y="498" width="410" height="98" fill="#f8f9f9" stroke="#d5dbdb" rx="4"/>
+<text x="36" y="526" font-size="13" font-family="Arial" fill="#1b2631">Total hash records: 71</text>
+<text x="36" y="547" font-size="13" font-family="Arial" fill="#1b2631">Unique fingerprints: 71</text>
+<text x="36" y="568" font-size="13" font-family="Arial" fill="#1b2631">Top similarity links shown: 11</text>
+<text x="36" y="587" font-size="11" font-family="Arial" fill="#5d6d7e">Source: paper_hash_table.csv + similar_paper_pairs.csv</text>
 </svg>
