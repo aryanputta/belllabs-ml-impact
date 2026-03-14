@@ -4,7 +4,9 @@ from __future__ import annotations
 
 import csv
 import math
-from collections import Counter
+import re
+from collections import Counter, defaultdict
+from html import escape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -20,6 +22,28 @@ def read_csv(path: Path):
 def save(path: Path, text: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(text, encoding="utf-8")
+
+
+def _split_authors(value: str) -> list[str]:
+    return [p.strip() for p in re.split(r";|,| and ", value or "") if p.strip()]
+
+
+def _short_authors(value: str) -> str:
+    authors = _split_authors(value)
+    if not authors:
+        return "Unknown"
+    if len(authors) == 1:
+        return authors[0]
+    return f"{authors[0]} +{len(authors)-1}"
+
+
+def _short_title(value: str, limit: int = 24) -> str:
+    value = (value or "").strip()
+    return value if len(value) <= limit else value[: limit - 1] + "…"
+
+
+def _cluster_label(value: str) -> str:
+    return (value or "unknown").replace("_", " ").title()
 
 
 def cluster_distribution_svg(rows: list[dict[str, str]]) -> str:
@@ -44,70 +68,91 @@ def cluster_distribution_svg(rows: list[dict[str, str]]) -> str:
         y = margin_top + i * bar_h + 8
         w = (cnt / max_count) * (chart_w - 40)
         color = palette[i % len(palette)]
-        parts.append(f'<text x="20" y="{y + 14:.1f}" font-size="13" font-family="Arial">{name}</text>')
+        parts.append(f'<text x="20" y="{y + 14:.1f}" font-size="13" font-family="Arial">{escape(_cluster_label(name))}</text>')
         parts.append(f'<rect x="{margin_left}" y="{y:.1f}" width="{w:.1f}" height="{bar_h - 12:.1f}" fill="{color}" rx="4"/>')
         parts.append(f'<text x="{margin_left + w + 8:.1f}" y="{y + 14:.1f}" font-size="12" font-family="Arial">{cnt}</text>')
 
-    parts.append('</svg>')
+    parts.append("</svg>")
     return "\n".join(parts)
 
 
-def hash_similarity_svg(hash_rows: list[dict[str, str]], sim_rows: list[dict[str, str]]) -> str:
-    top = sorted(sim_rows, key=lambda r: float(r.get("similarity", 0)), reverse=True)[:20]
+def hash_similarity_svg(hash_rows: list[dict[str, str]], sim_rows: list[dict[str, str]], papers: list[dict[str, str]]) -> str:
+    top = sorted(sim_rows, key=lambda r: float(r.get("similarity", 0)), reverse=True)[:10]
+    paper_map = {r.get("paper_id", ""): r for r in papers}
+    hash_map = {r.get("paper_id", ""): r.get("fingerprint", "")[:6] for r in hash_rows}
+
     nodes = []
     seen = set()
     for r in top:
-        for k in ("paper_a", "paper_b"):
-            p = r.get(k, "")
-            if p and p not in seen:
-                seen.add(p)
-                nodes.append(p)
+        for key in ("paper_a", "paper_b"):
+            pid = r.get(key, "")
+            if pid and pid not in seen:
+                seen.add(pid)
+                nodes.append(pid)
 
-    cx, cy, rad = 420, 270, 190
+    width, height = 1180, 670
+    cols = 2
+    rows = max(1, math.ceil(len(nodes) / cols))
+    x_positions = [230, 720]
+    y_step = 46
+    y_start = 120
     pos = {}
-    for i, n in enumerate(nodes):
-        ang = (2 * math.pi * i / max(len(nodes), 1))
-        pos[n] = (cx + rad * math.cos(ang), cy + rad * math.sin(ang))
-
-    hash_map = {r.get("paper_id", ""): r.get("fingerprint", "")[:6] for r in hash_rows}
+    for i, pid in enumerate(nodes):
+        c = i // rows
+        r = i % rows
+        c = min(c, cols - 1)
+        x = x_positions[c]
+        y = y_start + r * y_step
+        pos[pid] = (x, y)
 
     parts = [
-        '<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560">',
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}">',
         '<rect width="100%" height="100%" fill="#ffffff"/>',
-        '<text x="20" y="28" font-size="22" font-family="Arial" font-weight="bold">Hash-Similarity Link Graph (Top Similar Paper Pairs)</text>',
-        '<text x="20" y="50" font-size="13" font-family="Arial" fill="#555">Edges weighted by cosine similarity; node labels include hash prefix.</text>',
+        '<text x="24" y="36" font-size="24" font-family="Arial" font-weight="bold" fill="#17202a">Hash Similarity Network (Author + Category Labels)</text>',
+        '<text x="24" y="60" font-size="13" font-family="Arial" fill="#5d6d7e">Pairs are labeled by first author and research category instead of internal paper IDs.</text>',
     ]
 
-    for r in top:
-        a, b = r.get("paper_a", ""), r.get("paper_b", "")
+    for edge in top:
+        a, b = edge.get("paper_a", ""), edge.get("paper_b", "")
         if a not in pos or b not in pos:
             continue
-        s = float(r.get("similarity", 0.0))
         x1, y1 = pos[a]
         x2, y2 = pos[b]
-        stroke = 1 + 5 * max(0.0, min(1.0, s))
-        parts.append(f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="#6baed6" stroke-width="{stroke:.2f}" opacity="0.6"/>')
+        sim = float(edge.get("similarity", "0"))
+        stroke = 1.4 + 3.6 * max(0.0, min(1.0, sim))
+        mx = (x1 + x2) / 2
+        curve = min(y1, y2) - 20
+        parts.append(
+            f'<path d="M{x1:.1f},{y1:.1f} Q{mx:.1f},{curve:.1f} {x2:.1f},{y2:.1f}" '
+            f'stroke="#6faed6" fill="none" stroke-width="{stroke:.2f}" opacity="0.6"/>'
+        )
 
-    for n, (x, y) in pos.items():
-        parts.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="11" fill="#1f77b4"/>')
-        label = f"{n} ({hash_map.get(n,'------')})"
-        parts.append(f'<text x="{x + 14:.1f}" y="{y + 4:.1f}" font-size="10" font-family="Arial">{label}</text>')
+    for pid in nodes:
+        x, y = pos[pid]
+        row = paper_map.get(pid, {})
+        label_left = _short_authors(row.get("authors", ""))
+        label_right = _cluster_label(row.get("cluster", "unknown"))
+        title = _short_title(row.get("title", ""), 34)
+        hprefix = hash_map.get(pid, "------")
+
+        parts.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="7.8" fill="#2e86c1" stroke="#ffffff" stroke-width="1"/>')
+        parts.append(f'<rect x="{x+12:.1f}" y="{y-14:.1f}" width="420" height="30" rx="4" fill="#ffffff" stroke="#d5dbdb"/>')
+        parts.append(f'<text x="{x+18:.1f}" y="{y-2:.1f}" font-size="10.5" font-family="Arial" fill="#1b2631">{escape(label_left)} · {escape(label_right)} · hash {escape(hprefix)}</text>')
+        parts.append(f'<text x="{x+18:.1f}" y="{y+11:.1f}" font-size="10" font-family="Arial" fill="#5d6d7e">{escape(title)}</text>')
 
     uniq_hash = len({r.get("fingerprint", "") for r in hash_rows if r.get("fingerprint")})
-    parts.append('<rect x="20" y="420" width="360" height="110" fill="#f7f7f7" stroke="#ccc"/>')
-    parts.append(f'<text x="30" y="445" font-size="13" font-family="Arial">Total hash records: {len(hash_rows)}</text>')
-    parts.append(f'<text x="30" y="468" font-size="13" font-family="Arial">Unique fingerprints: {uniq_hash}</text>')
-    parts.append(f'<text x="30" y="491" font-size="13" font-family="Arial">Similar pairs shown: {len(top)}</text>')
-    parts.append('<text x="30" y="514" font-size="12" font-family="Arial" fill="#555">Use with paper_hash_table.csv + similar_paper_pairs.csv</text>')
+    parts.append('<rect x="24" y="580" width="520" height="72" fill="#f8f9f9" stroke="#d5dbdb" rx="4"/>')
+    parts.append(f'<text x="36" y="606" font-size="12.5" font-family="Arial" fill="#1b2631">Hash records: {len(hash_rows)} | Unique fingerprints: {uniq_hash} | Top links shown: {len(top)}</text>')
+    parts.append('<text x="36" y="626" font-size="11" font-family="Arial" fill="#5d6d7e">Label format: Author · Category · hash prefix (title on second line)</text>')
 
-    parts.append('</svg>')
+    parts.append("</svg>")
     return "\n".join(parts)
 
 
 def paper_flow_network_svg(papers: list[dict[str, str]], sim_rows: list[dict[str, str]]) -> str:
-    """Directed paper network (arrow links), arranged left-to-right by year."""
+    """Directed paper network with cleaner spacing and human-readable labels."""
     by_id = {r.get("paper_id", ""): r for r in papers}
-    top = sorted(sim_rows, key=lambda r: float(r.get("similarity", 0.0)), reverse=True)[:14]
+    top = sorted(sim_rows, key=lambda r: float(r.get("similarity", 0.0)), reverse=True)[:8]
 
     nodes = []
     seen = set()
@@ -121,33 +166,31 @@ def paper_flow_network_svg(papers: list[dict[str, str]], sim_rows: list[dict[str
     years = sorted({int(by_id[n].get("year", 0)) for n in nodes})
     min_y, max_y = (min(years), max(years)) if years else (0, 1)
 
-    x0, x1 = 120, 880
-    y_base, row_h = 120, 56
+    width, height = 1280, 760
+    x0, x1 = 140, 1180
+    lane_ys = [210, 300, 390, 480, 570]
     pos = {}
-    year_counts = {}
-    for n in nodes:
-        y = int(by_id[n].get("year", 0))
-        frac = (y - min_y) / max((max_y - min_y), 1)
+
+    for i, n in enumerate(nodes):
+        yv = int(by_id[n].get("year", 0))
+        frac = (yv - min_y) / max((max_y - min_y), 1)
         x = x0 + frac * (x1 - x0)
-        idx = year_counts.get(y, 0)
-        year_counts[y] = idx + 1
-        yy = y_base + idx * row_h
-        pos[n] = (x, yy)
+        lane = i % len(lane_ys)
+        pos[n] = (x, lane_ys[lane])
 
     parts = [
-        '<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="680">',
-        '<defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L10,4 L0,8 z" fill="#7f7f7f"/></marker></defs>',
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}">',
+        '<defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L10,4 L0,8 z" fill="#7f8c8d"/></marker></defs>',
         '<rect width="100%" height="100%" fill="#ffffff"/>',
-        '<text x="20" y="28" font-size="22" font-family="Arial" font-weight="bold">Directed Paper Network (Similarity Arrows by Time)</text>',
-        '<text x="20" y="50" font-size="13" font-family="Arial" fill="#555">Nodes are papers; arrows connect top similar pairs, directed from earlier to later year.</text>',
+        '<text x="24" y="34" font-size="24" font-family="Arial" font-weight="bold" fill="#17202a">Directed Paper Flow Network (Clean Author Labels)</text>',
+        '<text x="24" y="57" font-size="13" font-family="Arial" fill="#5d6d7e">Timeline by year, with spread lanes to avoid stacking and overlap.</text>',
     ]
 
-    # year axis
     for y in years:
         frac = (y - min_y) / max((max_y - min_y), 1)
         x = x0 + frac * (x1 - x0)
-        parts.append(f'<line x1="{x:.1f}" y1="70" x2="{x:.1f}" y2="650" stroke="#f0f0f0"/>')
-        parts.append(f'<text x="{x-12:.1f}" y="86" font-size="11" font-family="Arial" fill="#666">{y}</text>')
+        parts.append(f'<line x1="{x:.1f}" y1="95" x2="{x:.1f}" y2="650" stroke="#ecf0f1"/>')
+        parts.append(f'<text x="{x-12:.1f}" y="88" font-size="10.5" font-family="Arial" fill="#7b8a8b">{y}</text>')
 
     for e in top:
         a, b = e.get("paper_a", ""), e.get("paper_b", "")
@@ -159,10 +202,12 @@ def paper_flow_network_svg(papers: list[dict[str, str]], sim_rows: list[dict[str
         x1p, y1p = pos[src]
         x2p, y2p = pos[dst]
         sim = float(e.get("similarity", 0.0))
-        stroke = 1 + 4 * max(0.0, min(1.0, sim))
+        stroke = 1.4 + 3.2 * max(0.0, min(1.0, sim))
+        mx = (x1p + x2p) / 2
+        curve = min(y1p, y2p) - 32
         parts.append(
-            f'<line x1="{x1p:.1f}" y1="{y1p:.1f}" x2="{x2p:.1f}" y2="{y2p:.1f}" stroke="#7f7f7f" '
-            f'stroke-width="{stroke:.2f}" opacity="0.75" marker-end="url(#arrow)"/>'
+            f'<path d="M{x1p:.1f},{y1p:.1f} Q{mx:.1f},{curve:.1f} {x2p:.1f},{y2p:.1f}" stroke="#85929e" '
+            f'fill="none" stroke-width="{stroke:.2f}" opacity="0.65" marker-end="url(#arrow)"/>'
         )
 
     palette = {
@@ -175,20 +220,124 @@ def paper_flow_network_svg(papers: list[dict[str, str]], sim_rows: list[dict[str
         "mathematics_statistics": "#8c564b",
         "satellite_communications": "#e377c2",
     }
+
     for n in nodes:
         x, y = pos[n]
         row = by_id[n]
-        cluster = row.get("cluster", "unknown")
-        color = palette.get(cluster, "#444")
-        title = row.get("title", "")[:34]
-        parts.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="8" fill="{color}"/>')
-        parts.append(f'<text x="{x+10:.1f}" y="{y+4:.1f}" font-size="10" font-family="Arial">{n}: {title}</text>')
+        color = palette.get(row.get("cluster", "unknown"), "#566573")
+        label = f"{_short_authors(row.get('authors', ''))} · {_cluster_label(row.get('cluster', 'unknown'))}"
+        title = _short_title(row.get("title", ""), 36)
 
-    parts.append('<rect x="20" y="560" width="360" height="100" fill="#f7f7f7" stroke="#ccc"/>')
-    parts.append(f'<text x="30" y="585" font-size="13" font-family="Arial">Papers shown: {len(nodes)}</text>')
-    parts.append(f'<text x="30" y="607" font-size="13" font-family="Arial">Similarity arrows: {len(top)}</text>')
-    parts.append('<text x="30" y="629" font-size="12" font-family="Arial" fill="#555">Layout: x-axis by publication year (earlier → later)</text>')
-    parts.append('</svg>')
+        parts.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="8" fill="{color}" stroke="#ffffff" stroke-width="1"/>')
+        parts.append(f'<rect x="{x+11:.1f}" y="{y-13:.1f}" width="300" height="28" rx="4" fill="#ffffff" stroke="#d5dbdb"/>')
+        parts.append(f'<text x="{x+17:.1f}" y="{y-2:.1f}" font-size="10.5" font-family="Arial" fill="#1b2631">{escape(label)}</text>')
+        parts.append(f'<text x="{x+17:.1f}" y="{y+10:.1f}" font-size="10" font-family="Arial" fill="#5d6d7e">{escape(title)}</text>')
+
+    parts.append('<rect x="24" y="676" width="580" height="62" fill="#f8f9f9" stroke="#d5dbdb" rx="4"/>')
+    parts.append(f'<text x="36" y="700" font-size="12.5" font-family="Arial" fill="#1b2631">Papers shown: {len(nodes)} | Similarity arrows: {len(top)}</text>')
+    parts.append('<text x="36" y="720" font-size="11" font-family="Arial" fill="#5d6d7e">Labels show Author + Category + short title (no internal paper IDs).</text>')
+
+    parts.append("</svg>")
+    return "\n".join(parts)
+
+
+def innovation_map_svg(papers: list[dict[str, str]], researchers: list[dict[str, str]]) -> str:
+    """Bell Labs innovation map in a clean bipartite layout (researchers -> domains)."""
+    highlight = ["Claude Shannon", "Harry Nyquist", "John Tukey", "Richard Hamming"]
+
+    author_domains: dict[str, set[str]] = defaultdict(set)
+    author_papers: Counter[str] = Counter()
+    for row in papers:
+        cluster = row.get("cluster", "unknown")
+        for a in _split_authors(row.get("authors", "")):
+            author_domains[a].add(cluster)
+            author_papers[a] += 1
+
+    domain_counts = Counter(r.get("cluster", "unknown") for r in papers)
+    domains = [d for d, _ in domain_counts.most_common(8)]
+
+    selected = set(highlight)
+    for name, _ in sorted(author_papers.items(), key=lambda kv: kv[1], reverse=True):
+        if len(selected) >= 14:
+            break
+        if author_papers[name] >= 2 or len(author_domains.get(name, set())) >= 2:
+            selected.add(name)
+
+    researchers_ordered = sorted(selected, key=lambda n: (-author_papers.get(n, 0), n))
+
+    width, height = 1320, 840
+    parts = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}">',
+        '<rect width="100%" height="100%" fill="#ffffff"/>',
+        '<text x="24" y="36" font-size="28" font-family="Arial" font-weight="bold" fill="#17202a">Bell Labs Innovation Map</text>',
+        '<text x="24" y="60" font-size="14" font-family="Arial" fill="#5d6d7e">Clean bipartite view: Researchers on left, Categories on right, bridges shown by multiple links.</text>',
+    ]
+
+    cluster_colors = {
+        "information_theory": "#1f77b4",
+        "network_theory": "#17becf",
+        "computing_systems": "#2ca02c",
+        "semiconductor_physics": "#d62728",
+        "radio_astronomy": "#9467bd",
+        "photonics_laser": "#ff7f0e",
+        "mathematics_statistics": "#8c564b",
+        "satellite_communications": "#e377c2",
+    }
+
+    left_x, right_x = 220, 1020
+    y_start = 110
+    r_step = 46
+    d_step = 74
+
+    r_pos = {name: (left_x, y_start + i * r_step) for i, name in enumerate(researchers_ordered)}
+    d_pos = {d: (right_x, 170 + i * d_step) for i, d in enumerate(domains)}
+
+    # Edges first
+    for name in researchers_ordered:
+        for d in sorted(author_domains.get(name, set())):
+            if d not in d_pos:
+                continue
+            x1, y1 = r_pos[name]
+            x2, y2 = d_pos[d]
+            bridge = len(author_domains.get(name, set())) >= 2
+            stroke_w = 2.4 if bridge else 1.2
+            opacity = 0.55 if bridge else 0.26
+            mx = (x1 + x2) / 2
+            curve = y1 + (y2 - y1) * 0.35
+            parts.append(
+                f'<path d="M{x1:.1f},{y1:.1f} Q{mx:.1f},{curve:.1f} {x2:.1f},{y2:.1f}" '
+                f'stroke="#aeb6bf" fill="none" stroke-width="{stroke_w:.1f}" opacity="{opacity:.2f}"/>'
+            )
+
+    # Researcher nodes/labels
+    for name in researchers_ordered:
+        x, y = r_pos[name]
+        papers_n = author_papers.get(name, 0)
+        dom_n = len(author_domains.get(name, set()))
+        is_hi = name in highlight
+        fill = "#fef9e7" if is_hi else "#f8f9f9"
+        stroke = "#1b2631" if is_hi else "#d5dbdb"
+        radius = 10 if is_hi else 7
+        parts.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{radius}" fill="{fill}" stroke="{stroke}" stroke-width="2"/>')
+        if dom_n >= 2:
+            parts.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{radius+4}" fill="none" stroke="#5dade2" stroke-width="1.3" stroke-dasharray="3 2"/>')
+        parts.append(f'<text x="{x+16:.1f}" y="{y+4:.1f}" font-size="11" font-family="Arial" fill="#1b2631">{escape(name)} ({papers_n} papers, {dom_n} domains)</text>')
+
+    # Domain nodes/labels
+    for d in domains:
+        x, y = d_pos[d]
+        color = cluster_colors.get(d, "#7f8c8d")
+        label = _cluster_label(d)
+        count = domain_counts.get(d, 0)
+        parts.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="14" fill="{color}" stroke="#ffffff" stroke-width="1"/>')
+        parts.append(f'<text x="{x+20:.1f}" y="{y+4:.1f}" font-size="12" font-family="Arial" fill="#1b2631">{escape(label)} ({count} papers)</text>')
+
+    bridge_count = sum(1 for n in researchers_ordered if len(author_domains.get(n, set())) >= 2)
+    parts.append('<rect x="24" y="760" width="860" height="62" rx="4" fill="#f8f9f9" stroke="#d5dbdb"/>')
+    parts.append(f'<text x="38" y="784" font-size="12.5" font-family="Arial" fill="#1b2631">Researchers shown: {len(researchers_ordered)} | Categories shown: {len(domains)} | Cross-domain bridges: {bridge_count}</text>')
+    parts.append('<text x="38" y="804" font-size="11" font-family="Arial" fill="#5d6d7e">Dashed ring = bridge researcher. Highlighted: Shannon, Nyquist, Tukey, Hamming.</text>')
+
+    parts.append("</svg>")
     return "\n".join(parts)
 
 
@@ -197,14 +346,17 @@ def main() -> int:
     papers = read_csv(DATA / "papers.csv")
     hashes = read_csv(DATA / "paper_hash_table.csv")
     sim = read_csv(DATA / "similar_paper_pairs.csv")
+    researchers = read_csv(DATA / "researcher_profiles.csv")
 
     save(OUT / "fig14_cluster_distribution.svg", cluster_distribution_svg(papers))
-    save(OUT / "fig15_hash_similarity_graph.svg", hash_similarity_svg(hashes, sim))
+    save(OUT / "fig15_hash_similarity_graph.svg", hash_similarity_svg(hashes, sim, papers))
     save(OUT / "fig16_paper_flow_network.svg", paper_flow_network_svg(papers, sim))
+    save(OUT / "fig17_bell_labs_innovation_map.svg", innovation_map_svg(papers, researchers))
 
     print(f"Saved: {OUT / 'fig14_cluster_distribution.svg'}")
     print(f"Saved: {OUT / 'fig15_hash_similarity_graph.svg'}")
     print(f"Saved: {OUT / 'fig16_paper_flow_network.svg'}")
+    print(f"Saved: {OUT / 'fig17_bell_labs_innovation_map.svg'}")
     return 0
 
 

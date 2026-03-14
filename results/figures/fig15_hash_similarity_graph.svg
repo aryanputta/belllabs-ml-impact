@@ -1,59 +1,86 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560">
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="670">
 <rect width="100%" height="100%" fill="#ffffff"/>
-<text x="20" y="28" font-size="22" font-family="Arial" font-weight="bold">Hash-Similarity Link Graph (Top Similar Paper Pairs)</text>
-<text x="20" y="50" font-size="13" font-family="Arial" fill="#555">Edges weighted by cosine similarity; node labels include hash prefix.</text>
-<line x1="610.0" y1="270.0" x2="599.7" y2="331.7" stroke="#6baed6" stroke-width="5.32" opacity="0.6"/>
-<line x1="569.9" y1="386.7" x2="523.9" y2="429.1" stroke="#6baed6" stroke-width="4.93" opacity="0.6"/>
-<line x1="466.6" y1="454.2" x2="404.3" y2="459.4" stroke="#6baed6" stroke-width="4.24" opacity="0.6"/>
-<line x1="343.7" y1="444.0" x2="291.3" y2="409.8" stroke="#6baed6" stroke-width="4.23" opacity="0.6"/>
-<line x1="343.7" y1="444.0" x2="252.9" y2="360.4" stroke="#6baed6" stroke-width="4.04" opacity="0.6"/>
-<line x1="232.6" y1="301.3" x2="232.6" y2="238.7" stroke="#6baed6" stroke-width="4.04" opacity="0.6"/>
-<line x1="252.9" y1="179.6" x2="291.3" y2="130.2" stroke="#6baed6" stroke-width="4.04" opacity="0.6"/>
-<line x1="343.7" y1="96.0" x2="404.3" y2="80.6" stroke="#6baed6" stroke-width="3.96" opacity="0.6"/>
-<line x1="232.6" y1="301.3" x2="466.6" y2="85.8" stroke="#6baed6" stroke-width="3.94" opacity="0.6"/>
-<line x1="523.9" y1="110.9" x2="291.3" y2="130.2" stroke="#6baed6" stroke-width="3.82" opacity="0.6"/>
-<line x1="569.9" y1="153.3" x2="599.7" y2="208.3" stroke="#6baed6" stroke-width="3.79" opacity="0.6"/>
-<circle cx="610.0" cy="270.0" r="11" fill="#1f77b4"/>
-<text x="624.0" y="274.0" font-size="10" font-family="Arial">BL0062 (18afc8)</text>
-<circle cx="599.7" cy="331.7" r="11" fill="#1f77b4"/>
-<text x="613.7" y="335.7" font-size="10" font-family="Arial">BL0031 (595256)</text>
-<circle cx="569.9" cy="386.7" r="11" fill="#1f77b4"/>
-<text x="583.9" y="390.7" font-size="10" font-family="Arial">BL0047 (c7bf30)</text>
-<circle cx="523.9" cy="429.1" r="11" fill="#1f77b4"/>
-<text x="537.9" y="433.1" font-size="10" font-family="Arial">BL0048 (67cd80)</text>
-<circle cx="466.6" cy="454.2" r="11" fill="#1f77b4"/>
-<text x="480.6" y="458.2" font-size="10" font-family="Arial">BL0038 (7016d2)</text>
-<circle cx="404.3" cy="459.4" r="11" fill="#1f77b4"/>
-<text x="418.3" y="463.4" font-size="10" font-family="Arial">BL0042 (390043)</text>
-<circle cx="343.7" cy="444.0" r="11" fill="#1f77b4"/>
-<text x="357.7" y="448.0" font-size="10" font-family="Arial">BL0035 (087a35)</text>
-<circle cx="291.3" cy="409.8" r="11" fill="#1f77b4"/>
-<text x="305.3" y="413.8" font-size="10" font-family="Arial">BL0036 (2e62fe)</text>
-<circle cx="252.9" cy="360.4" r="11" fill="#1f77b4"/>
-<text x="266.9" y="364.4" font-size="10" font-family="Arial">BL0034 (f5d103)</text>
-<circle cx="232.6" cy="301.3" r="11" fill="#1f77b4"/>
-<text x="246.6" y="305.3" font-size="10" font-family="Arial">BL0010 (d45d5d)</text>
-<circle cx="232.6" cy="238.7" r="11" fill="#1f77b4"/>
-<text x="246.6" y="242.7" font-size="10" font-family="Arial">BL0060 (704b5f)</text>
-<circle cx="252.9" cy="179.6" r="11" fill="#1f77b4"/>
-<text x="266.9" y="183.6" font-size="10" font-family="Arial">BL0054 (37054d)</text>
-<circle cx="291.3" cy="130.2" r="11" fill="#1f77b4"/>
-<text x="305.3" y="134.2" font-size="10" font-family="Arial">BL0045 (d88f87)</text>
-<circle cx="343.7" cy="96.0" r="11" fill="#1f77b4"/>
-<text x="357.7" y="100.0" font-size="10" font-family="Arial">BL0025 (240bd9)</text>
-<circle cx="404.3" cy="80.6" r="11" fill="#1f77b4"/>
-<text x="418.3" y="84.6" font-size="10" font-family="Arial">BL0022 (cd2c02)</text>
-<circle cx="466.6" cy="85.8" r="11" fill="#1f77b4"/>
-<text x="480.6" y="89.8" font-size="10" font-family="Arial">BL0013 (8e898b)</text>
-<circle cx="523.9" cy="110.9" r="11" fill="#1f77b4"/>
-<text x="537.9" y="114.9" font-size="10" font-family="Arial">BL0044 (0430ad)</text>
-<circle cx="569.9" cy="153.3" r="11" fill="#1f77b4"/>
-<text x="583.9" y="157.3" font-size="10" font-family="Arial">BL0063 (df7c6b)</text>
-<circle cx="599.7" cy="208.3" r="11" fill="#1f77b4"/>
-<text x="613.7" y="212.3" font-size="10" font-family="Arial">BL0050 (c729b2)</text>
-<rect x="20" y="420" width="360" height="110" fill="#f7f7f7" stroke="#ccc"/>
-<text x="30" y="445" font-size="13" font-family="Arial">Total hash records: 71</text>
-<text x="30" y="468" font-size="13" font-family="Arial">Unique fingerprints: 71</text>
-<text x="30" y="491" font-size="13" font-family="Arial">Similar pairs shown: 11</text>
-<text x="30" y="514" font-size="12" font-family="Arial" fill="#555">Use with paper_hash_table.csv + similar_paper_pairs.csv</text>
+<text x="24" y="36" font-size="24" font-family="Arial" font-weight="bold" fill="#17202a">Hash Similarity Network (Author + Category Labels)</text>
+<text x="24" y="60" font-size="13" font-family="Arial" fill="#5d6d7e">Pairs are labeled by first author and research category instead of internal paper IDs.</text>
+<path d="M230.0,120.0 Q230.0,100.0 230.0,166.0" stroke="#6faed6" fill="none" stroke-width="4.51" opacity="0.6"/>
+<path d="M230.0,212.0 Q230.0,192.0 230.0,258.0" stroke="#6faed6" fill="none" stroke-width="4.23" opacity="0.6"/>
+<path d="M230.0,304.0 Q230.0,284.0 230.0,350.0" stroke="#6faed6" fill="none" stroke-width="3.73" opacity="0.6"/>
+<path d="M230.0,396.0 Q230.0,376.0 230.0,442.0" stroke="#6faed6" fill="none" stroke-width="3.72" opacity="0.6"/>
+<path d="M230.0,396.0 Q230.0,376.0 230.0,488.0" stroke="#6faed6" fill="none" stroke-width="3.59" opacity="0.6"/>
+<path d="M720.0,120.0 Q720.0,100.0 720.0,166.0" stroke="#6faed6" fill="none" stroke-width="3.59" opacity="0.6"/>
+<path d="M720.0,212.0 Q720.0,192.0 720.0,258.0" stroke="#6faed6" fill="none" stroke-width="3.59" opacity="0.6"/>
+<path d="M720.0,304.0 Q720.0,284.0 720.0,350.0" stroke="#6faed6" fill="none" stroke-width="3.53" opacity="0.6"/>
+<path d="M720.0,120.0 Q720.0,100.0 720.0,396.0" stroke="#6faed6" fill="none" stroke-width="3.52" opacity="0.6"/>
+<path d="M720.0,442.0 Q720.0,238.0 720.0,258.0" stroke="#6faed6" fill="none" stroke-width="3.43" opacity="0.6"/>
+<circle cx="230.0" cy="120.0" r="7.8" fill="#2e86c1" stroke="#ffffff" stroke-width="1"/>
+<rect x="242.0" y="106.0" width="420" height="30" rx="4" fill="#ffffff" stroke="#d5dbdb"/>
+<text x="248.0" y="118.0" font-size="10.5" font-family="Arial" fill="#1b2631">Ken Thompson · Computing Systems · hash 18afc8</text>
+<text x="248.0" y="131.0" font-size="10" font-family="Arial" fill="#5d6d7e">Regular Expression Search Algorit…</text>
+<circle cx="230.0" cy="166.0" r="7.8" fill="#2e86c1" stroke="#ffffff" stroke-width="1"/>
+<rect x="242.0" y="152.0" width="420" height="30" rx="4" fill="#ffffff" stroke="#d5dbdb"/>
+<text x="248.0" y="164.0" font-size="10.5" font-family="Arial" fill="#1b2631">Alfred Aho +1 · Computing Systems · hash 595256</text>
+<text x="248.0" y="177.0" font-size="10" font-family="Arial" fill="#5d6d7e">A Regular Expression Matcher</text>
+<circle cx="230.0" cy="212.0" r="7.8" fill="#2e86c1" stroke="#ffffff" stroke-width="1"/>
+<rect x="242.0" y="198.0" width="420" height="30" rx="4" fill="#ffffff" stroke="#d5dbdb"/>
+<text x="248.0" y="210.0" font-size="10.5" font-family="Arial" fill="#1b2631">John Tukey · Mathematics Statistics · hash c7bf30</text>
+<text x="248.0" y="223.0" font-size="10" font-family="Arial" fill="#5d6d7e">The Future of Data Analysis</text>
+<circle cx="230.0" cy="258.0" r="7.8" fill="#2e86c1" stroke="#ffffff" stroke-width="1"/>
+<rect x="242.0" y="244.0" width="420" height="30" rx="4" fill="#ffffff" stroke="#d5dbdb"/>
+<text x="248.0" y="256.0" font-size="10.5" font-family="Arial" fill="#1b2631">John Tukey · Mathematics Statistics · hash 67cd80</text>
+<text x="248.0" y="269.0" font-size="10" font-family="Arial" fill="#5d6d7e">Exploratory Data Analysis</text>
+<circle cx="230.0" cy="304.0" r="7.8" fill="#2e86c1" stroke="#ffffff" stroke-width="1"/>
+<rect x="242.0" y="290.0" width="420" height="30" rx="4" fill="#ffffff" stroke="#d5dbdb"/>
+<text x="248.0" y="302.0" font-size="10.5" font-family="Arial" fill="#1b2631">Karl Jansky · Radio Astronomy · hash 7016d2</text>
+<text x="248.0" y="315.0" font-size="10" font-family="Arial" fill="#5d6d7e">Electrical Disturbances Apparentl…</text>
+<circle cx="230.0" cy="350.0" r="7.8" fill="#2e86c1" stroke="#ffffff" stroke-width="1"/>
+<rect x="242.0" y="336.0" width="420" height="30" rx="4" fill="#ffffff" stroke="#d5dbdb"/>
+<text x="248.0" y="348.0" font-size="10.5" font-family="Arial" fill="#1b2631">Karl Jansky · Radio Astronomy · hash 390043</text>
+<text x="248.0" y="361.0" font-size="10" font-family="Arial" fill="#5d6d7e">Radio Emission from Radio-Frequen…</text>
+<circle cx="230.0" cy="396.0" r="7.8" fill="#2e86c1" stroke="#ffffff" stroke-width="1"/>
+<rect x="242.0" y="382.0" width="420" height="30" rx="4" fill="#ffffff" stroke="#d5dbdb"/>
+<text x="248.0" y="394.0" font-size="10.5" font-family="Arial" fill="#1b2631">Charles Kao +1 · Photonics Laser · hash 087a35</text>
+<text x="248.0" y="407.0" font-size="10" font-family="Arial" fill="#5d6d7e">Dielectric-Fiber Surface Waveguid…</text>
+<circle cx="230.0" cy="442.0" r="7.8" fill="#2e86c1" stroke="#ffffff" stroke-width="1"/>
+<rect x="242.0" y="428.0" width="420" height="30" rx="4" fill="#ffffff" stroke="#d5dbdb"/>
+<text x="248.0" y="440.0" font-size="10.5" font-family="Arial" fill="#1b2631">Tingye Li +1 · Photonics Laser · hash 2e62fe</text>
+<text x="248.0" y="453.0" font-size="10" font-family="Arial" fill="#5d6d7e">Low-Loss Optical Fiber</text>
+<circle cx="230.0" cy="488.0" r="7.8" fill="#2e86c1" stroke="#ffffff" stroke-width="1"/>
+<rect x="242.0" y="474.0" width="420" height="30" rx="4" fill="#ffffff" stroke="#d5dbdb"/>
+<text x="248.0" y="486.0" font-size="10.5" font-family="Arial" fill="#1b2631">Stewart Miller +1 · Photonics Laser · hash f5d103</text>
+<text x="248.0" y="499.0" font-size="10" font-family="Arial" fill="#5d6d7e">Optical Fiber Communications</text>
+<circle cx="720.0" cy="120.0" r="7.8" fill="#2e86c1" stroke="#ffffff" stroke-width="1"/>
+<rect x="732.0" y="106.0" width="420" height="30" rx="4" fill="#ffffff" stroke="#d5dbdb"/>
+<text x="738.0" y="118.0" font-size="10.5" font-family="Arial" fill="#1b2631">John Bardeen +1 · Semiconductor Physics · hash d45d5d</text>
+<text x="738.0" y="131.0" font-size="10" font-family="Arial" fill="#5d6d7e">The Transistor, A Semi-Conductor …</text>
+<circle cx="720.0" cy="166.0" r="7.8" fill="#2e86c1" stroke="#ffffff" stroke-width="1"/>
+<rect x="732.0" y="152.0" width="420" height="30" rx="4" fill="#ffffff" stroke="#d5dbdb"/>
+<text x="738.0" y="164.0" font-size="10.5" font-family="Arial" fill="#1b2631">William Shockley · Semiconductor Physics · hash 704b5f</text>
+<text x="738.0" y="177.0" font-size="10" font-family="Arial" fill="#5d6d7e">Bipolar Junction Transistor Theory</text>
+<circle cx="720.0" cy="212.0" r="7.8" fill="#2e86c1" stroke="#ffffff" stroke-width="1"/>
+<rect x="732.0" y="198.0" width="420" height="30" rx="4" fill="#ffffff" stroke="#d5dbdb"/>
+<text x="738.0" y="210.0" font-size="10.5" font-family="Arial" fill="#1b2631">Harry Nyquist +1 · Network Theory · hash 37054d</text>
+<text x="738.0" y="223.0" font-size="10" font-family="Arial" fill="#5d6d7e">Regenerative Current Action in Co…</text>
+<circle cx="720.0" cy="258.0" r="7.8" fill="#2e86c1" stroke="#ffffff" stroke-width="1"/>
+<rect x="732.0" y="244.0" width="420" height="30" rx="4" fill="#ffffff" stroke="#d5dbdb"/>
+<text x="738.0" y="256.0" font-size="10.5" font-family="Arial" fill="#1b2631">Harold Rosen +1 · Satellite Communications · hash d88f87</text>
+<text x="738.0" y="269.0" font-size="10" font-family="Arial" fill="#5d6d7e">Telstar: First Active Communicati…</text>
+<circle cx="720.0" cy="304.0" r="7.8" fill="#2e86c1" stroke="#ffffff" stroke-width="1"/>
+<rect x="732.0" y="290.0" width="420" height="30" rx="4" fill="#ffffff" stroke="#d5dbdb"/>
+<text x="738.0" y="302.0" font-size="10.5" font-family="Arial" fill="#1b2631">Dennis Ritchie +1 · Computing Systems · hash 240bd9</text>
+<text x="738.0" y="315.0" font-size="10" font-family="Arial" fill="#5d6d7e">MULTICS: The First Seven Years</text>
+<circle cx="720.0" cy="350.0" r="7.8" fill="#2e86c1" stroke="#ffffff" stroke-width="1"/>
+<rect x="732.0" y="336.0" width="420" height="30" rx="4" fill="#ffffff" stroke="#d5dbdb"/>
+<text x="738.0" y="348.0" font-size="10.5" font-family="Arial" fill="#1b2631">Dennis Ritchie +1 · Computing Systems · hash cd2c02</text>
+<text x="738.0" y="361.0" font-size="10" font-family="Arial" fill="#5d6d7e">The UNIX Time-Sharing System</text>
+<circle cx="720.0" cy="396.0" r="7.8" fill="#2e86c1" stroke="#ffffff" stroke-width="1"/>
+<rect x="732.0" y="382.0" width="420" height="30" rx="4" fill="#ffffff" stroke="#d5dbdb"/>
+<text x="738.0" y="394.0" font-size="10.5" font-family="Arial" fill="#1b2631">William Shockley · Semiconductor Physics · hash 8e898b</text>
+<text x="738.0" y="407.0" font-size="10" font-family="Arial" fill="#5d6d7e">Electrons and Holes in Semiconduc…</text>
+<circle cx="720.0" cy="442.0" r="7.8" fill="#2e86c1" stroke="#ffffff" stroke-width="1"/>
+<rect x="732.0" y="428.0" width="420" height="30" rx="4" fill="#ffffff" stroke="#d5dbdb"/>
+<text x="738.0" y="440.0" font-size="10.5" font-family="Arial" fill="#1b2631">John Pierce +1 · Satellite Communications · hash 0430ad</text>
+<text x="738.0" y="453.0" font-size="10" font-family="Arial" fill="#5d6d7e">Echo: America&#x27;s First Communicati…</text>
+<rect x="24" y="580" width="520" height="72" fill="#f8f9f9" stroke="#d5dbdb" rx="4"/>
+<text x="36" y="606" font-size="12.5" font-family="Arial" fill="#1b2631">Hash records: 71 | Unique fingerprints: 71 | Top links shown: 10</text>
+<text x="36" y="626" font-size="11" font-family="Arial" fill="#5d6d7e">Label format: Author · Category · hash prefix (title on second line)</text>
 </svg>

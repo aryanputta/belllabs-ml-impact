@@ -277,5 +277,48 @@
         "source": "README reported benchmark"
       }
     ]
+  },
+  "thesis_evidence": {
+    "corpus_span_years": 58,
+    "n_domains": 8,
+    "largest_domain_share": 0.2113,
+    "researcher_avg_domain_count": 1.086,
+    "bridge_researcher_count": 4,
+    "bridge_share": 0.069,
+    "high_impact_avg_career_span": 24.15,
+    "low_impact_avg_career_span": 19.27,
+    "high_impact_avg_domain_count": 1.0,
+    "low_impact_avg_domain_count": 1.11,
+    "similarity_same_cluster_share": 0.9091,
+    "key_figures": [
+      {
+        "name": "Claude Shannon",
+        "career_span": 31,
+        "n_domains": 1,
+        "is_bridge": 0,
+        "total_citations": 164370
+      },
+      {
+        "name": "Harry Nyquist",
+        "career_span": 37,
+        "n_domains": 2,
+        "is_bridge": 1,
+        "total_citations": 13291
+      },
+      {
+        "name": "John Tukey",
+        "career_span": 40,
+        "n_domains": 3,
+        "is_bridge": 1,
+        "total_citations": 57533
+      },
+      {
+        "name": "Richard Hamming",
+        "career_span": 30,
+        "n_domains": 2,
+        "is_bridge": 1,
+        "total_citations": 11828
+      }
+    ]
   }
 }
