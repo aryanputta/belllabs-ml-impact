@@ -156,11 +156,11 @@ Target venues: **Scientometrics**, **PLOS ONE**, **IEEE Access**, **Journal of I
 ## Citation
 
 ```bibtex
-@article{putta2024belllabs,
+@article{putta2026belllabs,
   title   = {Where Does Innovation Come From? A Machine Learning Analysis of Bell Laboratories (1928--1986)},
   author  = {Putta, Aryan and Lowe, Benjamin},
   journal = {Scientometrics},
-  year    = {2024},
+  year    = {2026},
   note    = {Under review}
 }
 ```
