@@ -1,5 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="980" height="540">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560" viewBox="0 0 980 560">
 <rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="38" font-size="24" font-family="Arial" font-weight="bold" fill="#17202a">Cluster Distribution of Bell Labs Outputs</text>
+<text x="24" y="60" font-size="13" font-family="Arial" fill="#566573">Categories are shown with cleaned labels for publication-ready readability.</text>
+<text x="24" y="100.0" font-size="13" font-family="Arial" fill="#1b2631">Semiconductor Physics</text>
+<rect x="240" y="86.0" width="660.0" height="41.8" fill="#1f77b4" rx="4"/>
+<text x="908.0" y="100.0" font-size="12" font-family="Arial" fill="#1b2631">15</text>
+<text x="24" y="153.8" font-size="13" font-family="Arial" fill="#1b2631">Computing Systems</text>
+<rect x="240" y="139.8" width="572.0" height="41.8" fill="#ff7f0e" rx="4"/>
+<text x="820.0" y="153.8" font-size="12" font-family="Arial" fill="#1b2631">13</text>
+<text x="24" y="207.5" font-size="13" font-family="Arial" fill="#1b2631">Information Theory</text>
+<rect x="240" y="193.5" width="528.0" height="41.8" fill="#2ca02c" rx="4"/>
+<text x="776.0" y="207.5" font-size="12" font-family="Arial" fill="#1b2631">12</text>
+<text x="24" y="261.2" font-size="13" font-family="Arial" fill="#1b2631">Mathematics Statistics</text>
+<rect x="240" y="247.2" width="352.0" height="41.8" fill="#d62728" rx="4"/>
+<text x="600.0" y="261.2" font-size="12" font-family="Arial" fill="#1b2631">8</text>
+<text x="24" y="315.0" font-size="13" font-family="Arial" fill="#1b2631">Radio Astronomy</text>
+<rect x="240" y="301.0" width="308.0" height="41.8" fill="#9467bd" rx="4"/>
+<text x="556.0" y="315.0" font-size="12" font-family="Arial" fill="#1b2631">7</text>
+<text x="24" y="368.8" font-size="13" font-family="Arial" fill="#1b2631">Photonics Laser</text>
+<rect x="240" y="354.8" width="264.0" height="41.8" fill="#8c564b" rx="4"/>
+<text x="512.0" y="368.8" font-size="12" font-family="Arial" fill="#1b2631">6</text>
+<text x="24" y="422.5" font-size="13" font-family="Arial" fill="#1b2631">Network Theory</text>
+<rect x="240" y="408.5" width="220.0" height="41.8" fill="#e377c2" rx="4"/>
+<text x="468.0" y="422.5" font-size="12" font-family="Arial" fill="#1b2631">5</text>
+<text x="24" y="476.2" font-size="13" font-family="Arial" fill="#1b2631">Satellite Communications</text>
+<rect x="240" y="462.2" width="220.0" height="41.8" fill="#17becf" rx="4"/>
+<text x="468.0" y="476.2" font-size="12" font-family="Arial" fill="#1b2631">5</text>
 <text x="20" y="28" font-size="22" font-family="Arial" font-weight="bold">Cluster Distribution of Bell Labs Outputs</text>
 <text x="20" y="50" font-size="13" font-family="Arial" fill="#555">Source: data/processed/papers.csv</text>
 <text x="20" y="62.0" font-size="13" font-family="Arial">Semiconductor Physics</text>
