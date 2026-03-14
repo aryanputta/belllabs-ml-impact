@@ -42,6 +42,7 @@ python -m src.researcher.researcher_analysis        # researcher archetypes and 
 python scripts/research_report.py                   # paper-ready summary from generated artifacts
 python scripts/validate_data_integrity.py            # sanity-check core dataset fields
 python scripts/generate_cluster_hash_figures.py      # creates cluster + hashing SVG figures
+python scripts/check_project_progress.py            # maps your to-do checklist to implementation status
 ```
 
 ---
@@ -108,6 +109,18 @@ belllabs-ml-impact/
 ```
 
 ---
+
+## Project Checklist Tracking
+
+To track which research bullets are implemented in code vs still pending:
+
+```bash
+python scripts/check_project_progress.py
+```
+
+Outputs:
+- `results/reports/project_checklist_status.md`
+- `results/reports/project_checklist_status.json`
 
 ## Environment Validation
 
@@ -201,11 +214,11 @@ Target venues: **Scientometrics**, **PLOS ONE**, **IEEE Access**, **Journal of I
 ## Citation
 
 ```bibtex
-@article{putta2024belllabs,
+@article{putta2026belllabs,
   title   = {Where Does Innovation Come From? A Machine Learning Analysis of Bell Laboratories (1928--1986)},
   author  = {Putta, Aryan and Lowe, Benjamin},
   journal = {Scientometrics},
-  year    = {2024},
+  year    = {2026},
   note    = {Under review}
 }
 ```
