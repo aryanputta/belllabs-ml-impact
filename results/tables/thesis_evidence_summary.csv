@@ -1,0 +1,12 @@
+metric,value
+corpus_span_years,58
+n_domains,8
+largest_domain_share,0.2113
+researcher_avg_domain_count,1.086
+bridge_researcher_count,4
+bridge_share,0.069
+high_impact_avg_career_span,24.15
+low_impact_avg_career_span,19.27
+high_impact_avg_domain_count,1.0
+low_impact_avg_domain_count,1.11
+similarity_same_cluster_share,0.9091
