@@ -1,0 +1,10 @@
+analysis,metric,value,source
+ml,models_reported,5,results/tables/ml_model_metrics.csv
+ml,best_model,Gradient Boosting,results/tables/ml_model_metrics.csv
+ml,best_auc,0.674,results/tables/ml_model_metrics.csv
+hash_similarity,n_hash_records,71,data/processed/paper_hash_table.csv
+hash_similarity,n_similar_pairs,11,data/processed/similar_paper_pairs.csv
+hash_similarity,mean_similarity,0.6428,data/processed/similar_paper_pairs.csv
+hash_similarity,same_cluster_share,0.9091,data/processed/similar_paper_pairs.csv
+clusters,n_clusters,8,data/processed/papers.csv
+data_sanity,status,pass,results/reports/data_sanity_report.json
