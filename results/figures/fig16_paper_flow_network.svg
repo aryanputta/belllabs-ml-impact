@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="680">
+<defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L10,4 L0,8 z" fill="#7f7f7f"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="20" y="28" font-size="22" font-family="Arial" font-weight="bold">Directed Paper Network (Similarity Arrows by Time)</text>
+<text x="20" y="50" font-size="13" font-family="Arial" fill="#555">Nodes are papers; arrows connect top similar pairs, directed from earlier to later year.</text>
+<line x1="120.0" y1="70" x2="120.0" y2="650" stroke="#f0f0f0"/>
+<text x="108.0" y="86" font-size="11" font-family="Arial" fill="#666">1933</text>
+<line x1="135.5" y1="70" x2="135.5" y2="650" stroke="#f0f0f0"/>
+<text x="123.5" y="86" font-size="11" font-family="Arial" fill="#666">1934</text>
+<line x1="151.0" y1="70" x2="151.0" y2="650" stroke="#f0f0f0"/>
+<text x="139.0" y="86" font-size="11" font-family="Arial" fill="#666">1935</text>
+<line x1="352.7" y1="70" x2="352.7" y2="650" stroke="#f0f0f0"/>
+<text x="340.7" y="86" font-size="11" font-family="Arial" fill="#666">1948</text>
+<line x1="383.7" y1="70" x2="383.7" y2="650" stroke="#f0f0f0"/>
+<text x="371.7" y="86" font-size="11" font-family="Arial" fill="#666">1950</text>
+<line x1="399.2" y1="70" x2="399.2" y2="650" stroke="#f0f0f0"/>
+<text x="387.2" y="86" font-size="11" font-family="Arial" fill="#666">1951</text>
+<line x1="554.3" y1="70" x2="554.3" y2="650" stroke="#f0f0f0"/>
+<text x="542.3" y="86" font-size="11" font-family="Arial" fill="#666">1961</text>
+<line x1="569.8" y1="70" x2="569.8" y2="650" stroke="#f0f0f0"/>
+<text x="557.8" y="86" font-size="11" font-family="Arial" fill="#666">1962</text>
+<line x1="585.3" y1="70" x2="585.3" y2="650" stroke="#f0f0f0"/>
+<text x="573.3" y="86" font-size="11" font-family="Arial" fill="#666">1963</text>
+<line x1="631.8" y1="70" x2="631.8" y2="650" stroke="#f0f0f0"/>
+<text x="619.8" y="86" font-size="11" font-family="Arial" fill="#666">1966</text>
+<line x1="662.9" y1="70" x2="662.9" y2="650" stroke="#f0f0f0"/>
+<text x="650.9" y="86" font-size="11" font-family="Arial" fill="#666">1968</text>
+<line x1="724.9" y1="70" x2="724.9" y2="650" stroke="#f0f0f0"/>
+<text x="712.9" y="86" font-size="11" font-family="Arial" fill="#666">1972</text>
+<line x1="755.9" y1="70" x2="755.9" y2="650" stroke="#f0f0f0"/>
+<text x="743.9" y="86" font-size="11" font-family="Arial" fill="#666">1974</text>
+<line x1="771.4" y1="70" x2="771.4" y2="650" stroke="#f0f0f0"/>
+<text x="759.4" y="86" font-size="11" font-family="Arial" fill="#666">1975</text>
+<line x1="802.4" y1="70" x2="802.4" y2="650" stroke="#f0f0f0"/>
+<text x="790.4" y="86" font-size="11" font-family="Arial" fill="#666">1977</text>
+<line x1="880.0" y1="70" x2="880.0" y2="650" stroke="#f0f0f0"/>
+<text x="868.0" y="86" font-size="11" font-family="Arial" fill="#666">1982</text>
+<line x1="662.9" y1="120.0" x2="771.4" y2="120.0" stroke="#7f7f7f" stroke-width="4.46" opacity="0.75" marker-end="url(#arrow)"/>
+<line x1="569.8" y1="120.0" x2="802.4" y2="120.0" stroke="#7f7f7f" stroke-width="4.14" opacity="0.75" marker-end="url(#arrow)"/>
+<line x1="120.0" y1="120.0" x2="151.0" y2="120.0" stroke="#7f7f7f" stroke-width="3.59" opacity="0.75" marker-end="url(#arrow)"/>
+<line x1="631.8" y1="120.0" x2="724.9" y2="120.0" stroke="#7f7f7f" stroke-width="3.58" opacity="0.75" marker-end="url(#arrow)"/>
+<line x1="631.8" y1="120.0" x2="631.8" y2="176.0" stroke="#7f7f7f" stroke-width="3.43" opacity="0.75" marker-end="url(#arrow)"/>
+<line x1="352.7" y1="120.0" x2="399.2" y2="120.0" stroke="#7f7f7f" stroke-width="3.43" opacity="0.75" marker-end="url(#arrow)"/>
+<line x1="135.5" y1="120.0" x2="585.3" y2="120.0" stroke="#7f7f7f" stroke-width="3.43" opacity="0.75" marker-end="url(#arrow)"/>
+<line x1="724.9" y1="176.0" x2="755.9" y2="120.0" stroke="#7f7f7f" stroke-width="3.37" opacity="0.75" marker-end="url(#arrow)"/>
+<line x1="352.7" y1="120.0" x2="383.7" y2="120.0" stroke="#7f7f7f" stroke-width="3.35" opacity="0.75" marker-end="url(#arrow)"/>
+<line x1="554.3" y1="120.0" x2="585.3" y2="120.0" stroke="#7f7f7f" stroke-width="3.25" opacity="0.75" marker-end="url(#arrow)"/>
+<line x1="771.4" y1="176.0" x2="880.0" y2="120.0" stroke="#7f7f7f" stroke-width="3.23" opacity="0.75" marker-end="url(#arrow)"/>
+<circle cx="120.0" cy="120.0" r="8" fill="#9467bd"/>
+<text x="130.0" y="124.0" font-size="10" font-family="Arial">BL0038: Electrical Disturbances Apparently</text>
+<circle cx="135.5" cy="120.0" r="8" fill="#17becf"/>
+<text x="145.5" y="124.0" font-size="10" font-family="Arial">BL0054: Regenerative Current Action in Com</text>
+<circle cx="151.0" cy="120.0" r="8" fill="#9467bd"/>
+<text x="161.0" y="124.0" font-size="10" font-family="Arial">BL0042: Radio Emission from Radio-Frequenc</text>
+<circle cx="352.7" cy="120.0" r="8" fill="#d62728"/>
+<text x="362.7" y="124.0" font-size="10" font-family="Arial">BL0010: The Transistor, A Semi-Conductor T</text>
+<circle cx="383.7" cy="120.0" r="8" fill="#d62728"/>
+<text x="393.7" y="124.0" font-size="10" font-family="Arial">BL0013: Electrons and Holes in Semiconduct</text>
+<circle cx="399.2" cy="120.0" r="8" fill="#d62728"/>
+<text x="409.2" y="124.0" font-size="10" font-family="Arial">BL0060: Bipolar Junction Transistor Theory</text>
+<circle cx="554.3" cy="120.0" r="8" fill="#e377c2"/>
+<text x="564.3" y="124.0" font-size="10" font-family="Arial">BL0044: Echo: America's First Communicatio</text>
+<circle cx="569.8" cy="120.0" r="8" fill="#8c564b"/>
+<text x="579.8" y="124.0" font-size="10" font-family="Arial">BL0047: The Future of Data Analysis</text>
+<circle cx="585.3" cy="120.0" r="8" fill="#e377c2"/>
+<text x="595.3" y="124.0" font-size="10" font-family="Arial">BL0045: Telstar: First Active Communicatio</text>
+<circle cx="631.8" cy="120.0" r="8" fill="#ff7f0e"/>
+<text x="641.8" y="124.0" font-size="10" font-family="Arial">BL0035: Dielectric-Fiber Surface Waveguide</text>
+<circle cx="631.8" cy="176.0" r="8" fill="#ff7f0e"/>
+<text x="641.8" y="180.0" font-size="10" font-family="Arial">BL0034: Optical Fiber Communications</text>
+<circle cx="662.9" cy="120.0" r="8" fill="#2ca02c"/>
+<text x="672.9" y="124.0" font-size="10" font-family="Arial">BL0062: Regular Expression Search Algorith</text>
+<circle cx="724.9" cy="120.0" r="8" fill="#ff7f0e"/>
+<text x="734.9" y="124.0" font-size="10" font-family="Arial">BL0036: Low-Loss Optical Fiber</text>
+<circle cx="724.9" cy="176.0" r="8" fill="#2ca02c"/>
+<text x="734.9" y="180.0" font-size="10" font-family="Arial">BL0025: MULTICS: The First Seven Years</text>
+<circle cx="755.9" cy="120.0" r="8" fill="#2ca02c"/>
+<text x="765.9" y="124.0" font-size="10" font-family="Arial">BL0022: The UNIX Time-Sharing System</text>
+<circle cx="771.4" cy="120.0" r="8" fill="#2ca02c"/>
+<text x="781.4" y="124.0" font-size="10" font-family="Arial">BL0031: A Regular Expression Matcher</text>
+<circle cx="771.4" cy="176.0" r="8" fill="#8c564b"/>
+<text x="781.4" y="180.0" font-size="10" font-family="Arial">BL0063: Sediment Deposition as Fractal Pro</text>
+<circle cx="802.4" cy="120.0" r="8" fill="#8c564b"/>
+<text x="812.4" y="124.0" font-size="10" font-family="Arial">BL0048: Exploratory Data Analysis</text>
+<circle cx="880.0" cy="120.0" r="8" fill="#8c564b"/>
+<text x="890.0" y="124.0" font-size="10" font-family="Arial">BL0050: The Fractal Geometry of Nature</text>
+<rect x="20" y="560" width="360" height="100" fill="#f7f7f7" stroke="#ccc"/>
+<text x="30" y="585" font-size="13" font-family="Arial">Papers shown: 19</text>
+<text x="30" y="607" font-size="13" font-family="Arial">Similarity arrows: 11</text>
+<text x="30" y="629" font-size="12" font-family="Arial" fill="#555">Layout: x-axis by publication year (earlier → later)</text>
+</svg>

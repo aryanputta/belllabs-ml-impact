@@ -1,0 +1,20 @@
+{
+  "dataset": "data/processed/papers.csv",
+  "n_rows": 71,
+  "required_columns_missing": [],
+  "duplicate_paper_ids": 0,
+  "invalid_year_rows": 0,
+  "invalid_citation_rows": 0,
+  "empty_title_rows": 0,
+  "domain_counts": {
+    "semiconductor_physics": 15,
+    "computing_systems": 13,
+    "information_theory": 12,
+    "mathematics_statistics": 8,
+    "radio_astronomy": 7,
+    "photonics_laser": 6,
+    "network_theory": 5,
+    "satellite_communications": 5
+  },
+  "status": "pass"
+}

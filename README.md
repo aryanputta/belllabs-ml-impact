@@ -33,15 +33,42 @@ git clone https://github.com/aryanputta/belllabs-ml-impact
 cd belllabs-ml-impact
 pip install -r requirements.txt
 
-python -m src.ml.train              # impact classification (5 models, 5-fold CV)
-python -m src.ml.explain            # SHAP analysis
-python -m src.similarity.paper_similarity   # MinHash + cosine similarity
-python -m src.researcher.researcher_analysis  # archetype classification
-python -m src.figures.generate_figures  # all 13 figures
-python run_all_tests.py             # 68 tests
+python scripts/verify_environment.py               # dependency/file sanity check
+python -m src.ml.train                              # impact classification (5-fold CV)
+python -m src.similarity.paper_similarity           # MinHash + cosine similarity
+python -m src.network.author_network                # co-author network metrics
+python -m src.clustering.research_clustering        # semantic clustering + ARI
+python -m src.researcher.researcher_analysis        # researcher archetypes and findings
+python scripts/research_report.py                   # paper-ready summary from generated artifacts
+python scripts/validate_data_integrity.py            # sanity-check core dataset fields
+python scripts/generate_cluster_hash_figures.py      # creates cluster + hashing SVG figures
 ```
 
 ---
+
+
+## Google Colab
+
+Use this one-shot helper in Colab after mounting/cloning the repo:
+
+```bash
+python scripts/colab_setup.py
+```
+
+This installs requirements and runs all major analysis modules end-to-end.
+
+## Where key things are
+
+- **Google Colab runner:** `scripts/colab_setup.py` (this is the main Colab execution file).
+- **Primary dataset:** `data/processed/papers.csv` (paper-level records).
+- **Model training code:** `src/ml/train.py` (with feature building in `src/ml/features.py`).
+- **Paper network + similarity code:** `src/similarity/paper_similarity.py` and `scripts/generate_cluster_hash_figures.py`.
+
+## Why `.env` if we already have `.gitignore`?
+
+- `.env` is where local secrets should live (API keys, tokens, credentials).
+- `.gitignore` makes sure those files are never committed by accident.
+- `SECURITY.md` documents additional branch-protection steps for GitHub.
 
 ## Repository Structure
 
@@ -82,6 +109,21 @@ belllabs-ml-impact/
 
 ---
 
+## Environment Validation
+
+A paper-ready summary is generated at `results/reports/research_brief.md` and machine-readable stats at `results/reports/research_report.json` after running:
+
+```bash
+python scripts/research_report.py
+```
+
+
+Run this to verify Python dependencies and required files are in place:
+
+```bash
+python scripts/verify_environment.py
+```
+
 ## ML Results Summary
 
 | Model | AUC | F1 | Accuracy |
@@ -119,6 +161,9 @@ belllabs-ml-impact/
 | 11 | Researcher success: high vs low impact |
 | 12 | Paper similarity heatmap (MinHash + cosine) |
 | 13 | Researcher archetype distribution and impact |
+| 14 | Cluster distribution across Bell Labs technical domains |
+| 15 | Hash-similarity graph of linked paper pairs |
+| 16 | Directed paper flow network (arrows over time) |
 
 ---
 
