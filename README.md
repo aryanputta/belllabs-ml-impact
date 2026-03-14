@@ -40,6 +40,8 @@ python -m src.network.author_network                # co-author network metrics
 python -m src.clustering.research_clustering        # semantic clustering + ARI
 python -m src.researcher.researcher_analysis        # researcher archetypes and findings
 python scripts/research_report.py                   # paper-ready summary from generated artifacts
+python scripts/validate_data_integrity.py            # sanity-check core dataset fields
+python scripts/generate_cluster_hash_figures.py      # creates cluster + hashing SVG figures
 python scripts/check_project_progress.py            # maps your to-do checklist to implementation status
 ```
 
@@ -55,6 +57,13 @@ python scripts/colab_setup.py
 ```
 
 This installs requirements and runs all major analysis modules end-to-end.
+
+## Where key things are
+
+- **Google Colab runner:** `scripts/colab_setup.py` (this is the main Colab execution file).
+- **Primary dataset:** `data/processed/papers.csv` (paper-level records).
+- **Model training code:** `src/ml/train.py` (with feature building in `src/ml/features.py`).
+- **Paper network + similarity code:** `src/similarity/paper_similarity.py` and `scripts/generate_cluster_hash_figures.py`.
 
 ## Why `.env` if we already have `.gitignore`?
 
@@ -165,6 +174,9 @@ python scripts/verify_environment.py
 | 11 | Researcher success: high vs low impact |
 | 12 | Paper similarity heatmap (MinHash + cosine) |
 | 13 | Researcher archetype distribution and impact |
+| 14 | Cluster distribution across Bell Labs technical domains |
+| 15 | Hash-similarity graph of linked paper pairs |
+| 16 | Directed paper flow network (arrows over time) |
 
 ---
 
