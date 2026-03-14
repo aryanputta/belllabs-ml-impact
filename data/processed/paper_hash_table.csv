@@ -1,0 +1,72 @@
+paper_id,fingerprint,minhash_lsb,title,cluster,year,citations
+BL0004,bbd4077dfb8d3287,253067,Transmission of Information,information_theory,1928,3981
+BL0005,6405404359ffce8c,253067,Certain Topics in Telegraph Transmission Theory,information_theory,1928,5140
+BL0065,9a333b8cf5c5f799,31989218,Thermal Noise in Resistors,network_theory,1928,4474
+BL0053,39eb1f8d9c4be3a4,3716343,Synthesis of Electrical Networks,network_theory,1932,2029
+BL0038,7016d233b9f04fba,9645064,Electrical Disturbances Apparently of Extraterrestrial Origin,radio_astronomy,1933,3428
+BL0054,37054d76161c50c7,59221061,Regenerative Current Action in Communications,network_theory,1934,1648
+BL0042,3900430254340262,9645064,Radio Emission from Radio-Frequency Radiation,radio_astronomy,1935,1815
+BL0070,3cd834e32ea3d08f,9645064,Effective Apertures of Receiving Antennas,radio_astronomy,1942,2130
+BL0069,3bf2dedacfd2ef76,9645064,Noise Figure of Radio Receivers,radio_astronomy,1944,2647
+BL0041,fd413b7bdd9665e3,6896901,Propagation of Short Radio Waves,radio_astronomy,1946,4251
+BL0046,73c0f2fc1bad4cc6,59221061,Traveling Wave Tube,satellite_communications,1947,3182
+BL0001,eb1331d1a9d9db67,10940682,A Mathematical Theory of Communication,information_theory,1948,145526
+BL0010,d45d5d9c75c7c9ca,26628308,"The Transistor, A Semi-Conductor Triode",semiconductor_physics,1948,16844
+BL0002,3df9300893d856e3,6038600,Communication in the Presence of Noise,information_theory,1949,8144
+BL0011,2781a8bb660efc40,59221061,Physical Principles Involved in Transistor Action,semiconductor_physics,1949,4005
+BL0059,df17c6bf400e9913,55419759,Semiconductor p-n Junction Diode,semiconductor_physics,1949,3862
+BL0007,c26102e3ee239eb1,2950967,Error Detecting and Error Correcting Codes,information_theory,1950,10573
+BL0021,c84f00c32be0620c,32849479,Growth of Germanium Single Crystals,semiconductor_physics,1950,1502
+BL0013,8e898b8e5739dcad,36678970,Electrons and Holes in Semiconductors,semiconductor_physics,1950,7287
+BL0056,c18944fb7c547140,17736102,Hamming Codes for Telephone Switching Systems,network_theory,1951,1255
+BL0060,704b5febb0252cf5,59221061,Bipolar Junction Transistor Theory,semiconductor_physics,1951,4404
+BL0055,b46e290dd53a15cd,82460550,Queuing Theory Applied to Telephone Networks,network_theory,1952,1472
+BL0006,a228eeff8a02b0d5,89813846,A Method for the Construction of Minimum Redundancy Codes,information_theory,1952,11465
+BL0014,31e2f642cf841420,6798519,Statistics of the Recombinations of Holes and Electrons,semiconductor_physics,1952,5336
+BL0012,5442fbdd0e1b530c,23373823,A Unipolar Field-Effect Transistor,semiconductor_physics,1952,4689
+BL0009,19a09fb2e7dbc465,59221061,Probability and Information Theory with Applications to Radar,information_theory,1953,2344
+BL0015,ff3f83bc280603bd,7132739,The Solar Battery,semiconductor_physics,1954,2925
+BL0043,b58b81abb0cd6640,9645064,Orbital Radio Relays,satellite_communications,1955,2387
+BL0003,8dc6ac0dff6993a4,59221061,Certain Results in Coding Theory for Noisy Channels,information_theory,1956,4439
+BL0016,b09300860bea6890,6798519,Impurity and Lattice Scattering of Carriers in Germanium,semiconductor_physics,1956,1750
+BL0057,21f82534e87e661a,59221061,Spread Spectrum Communications,information_theory,1957,2970
+BL0020,1d3d0e8d016a34cf,48047013,Theory of Superconductivity,semiconductor_physics,1957,7529
+BL0032,07ef40345dfb4cc0,18397027,Infrared and Optical Masers,photonics_laser,1958,17591
+BL0017,e60d2e9120ecc497,30454776,Absence of Diffusion in Certain Random Lattices,semiconductor_physics,1958,18418
+BL0049,2e3a040c8fc61010,12721206,On the Statistical Analysis of Dirty Data,mathematics_statistics,1960,2949
+BL0052,0e68074f79f8891c,59221061,Graph Theory and Its Applications to Problems of Society,mathematics_statistics,1960,1864
+BL0044,0430ad1b7047f7df,48336656,Echo: America's First Communications Satellite,satellite_communications,1961,1576
+BL0064,b34aa7c3d9ef7d64,37320552,Network Information Theory,information_theory,1961,3291
+BL0033,28da66cad2b5ed85,59221061,Population Inversion and Continuous Optical Maser Oscillation,photonics_laser,1961,4697
+BL0047,c7bf30ca3d40352e,10940682,The Future of Data Analysis,mathematics_statistics,1962,6644
+BL0040,a8fa45d6d3ec9141,1154057,A Horn-Reflector Antenna for Space Communication,radio_astronomy,1962,1211
+BL0071,92b27ebc062531de,50619484,Solid State Physics Theoretical Framework,semiconductor_physics,1963,2850
+BL0045,d88f8745cb4ed445,59221061,Telstar: First Active Communications Satellite,satellite_communications,1963,1945
+BL0066,dc7bc723f6d799e8,27344477,Microwave Antenna Systems for Satellite Ground Stations,satellite_communications,1964,1601
+BL0008,014194d2bed57618,41213451,An Algorithm for the Machine Calculation of Complex Fourier Series,information_theory,1965,21805
+BL0039,4a60bf7fc57f200e,27344477,A Measurement of Excess Antenna Temperature at 4080 Mc/s,radio_astronomy,1965,11950
+BL0035,087a35fe06c88fab,10940682,Dielectric-Fiber Surface Waveguides for Optical Frequencies,photonics_laser,1966,9266
+BL0034,f5d103fcc8cd70fd,22210370,Optical Fiber Communications,photonics_laser,1966,3031
+BL0051,061d8f601a99a9ee,59221061,How Long Is the Coast of Britain? Statistical Self-Similarity and Fractional Dimension,mathematics_statistics,1967,4674
+BL0058,8a01ccfd093b7652,24199652,Channel Coding with Multilevel Codes,information_theory,1967,7089
+BL0062,18afc891288062f0,59221061,Regular Expression Search Algorithm,computing_systems,1968,4657
+BL0061,c19b306bc28118c5,51836124,Shell Programming Language,computing_systems,1971,3026
+BL0036,2e62fe9d9d11e78f,88970047,Low-Loss Optical Fiber,photonics_laser,1972,2630
+BL0025,240bd953b5697743,9683757,MULTICS: The First Seven Years,computing_systems,1972,2724
+BL0067,7934ec72ae9c5382,47978299,Self-Organizing Maps for Data Visualization,mathematics_statistics,1974,1894
+BL0022,cd2c024b165f3119,9683757,The UNIX Time-Sharing System,computing_systems,1974,18489
+BL0063,df7c6ba5030a7a36,10152873,Sediment Deposition as Fractal Process,mathematics_statistics,1975,2173
+BL0031,595256718511895c,72075596,A Regular Expression Matcher,computing_systems,1975,1843
+BL0030,1ff51485a70949dd,72075596,The Lex Lexical Analyzer,computing_systems,1975,2267
+BL0048,67cd803eb199459f,59221061,Exploratory Data Analysis,mathematics_statistics,1977,20425
+BL0027,5026edfe3adf6048,59221061,AWK: A Pattern Scanning and Processing Language,computing_systems,1977,3205
+BL0029,dc6dd3da0cb69e16,59221061,UNIX Shell Design and Unix Pipeline,computing_systems,1978,2037
+BL0023,b4406338e741382c,59221061,The C Programming Language,computing_systems,1978,29097
+BL0068,f3500c8c2e0be45f,59221061,Make: A Program for Maintaining Computer Programs,computing_systems,1979,2940
+BL0037,dd1087239d88aff0,10940682,Semiconductor Lasers and Optical Amplifiers,photonics_laser,1980,1717
+BL0018,a6d0e78773d66020,26460743,Two-Dimensional Magnetotransport in the Extreme Quantum Limit,semiconductor_physics,1982,8836
+BL0050,c729b2ff5f97c90b,10152873,The Fractal Geometry of Nature,mathematics_statistics,1982,21611
+BL0024,733c260de5641169,59221061,Programming Pearls,computing_systems,1984,3901
+BL0026,5abe917e587dca06,40874398,Reflections on Trusting Trust,computing_systems,1984,6334
+BL0019,6eb13f4afadaeba0,124189758,New Method for High-Accuracy Determination of the Fine-Structure Constant,semiconductor_physics,1985,2005
+BL0028,0dd122820238532a,59221061,"Compilers: Principles, Techniques, and Tools",computing_systems,1986,31582

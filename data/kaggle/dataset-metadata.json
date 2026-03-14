@@ -1,0 +1,66 @@
+{
+  "title": "Bell Laboratories Research Corpus (1928\u20131986)",
+  "id": "aryanputta/bell-labs-research-corpus",
+  "licenses": [
+    {
+      "name": "CC0-1.0"
+    }
+  ],
+  "description": "71 historically documented Bell Labs publications (1928\u20131986), 56 researcher profiles, paper similarity matrix, MinHash fingerprints, researcher archetypes, and cluster metadata. Companion to: 'Where Does Innovation Come From? A Machine Learning Analysis of Bell Laboratories.' Includes: citation counts, co-authorship network data, 8 domain labels, LSA features, SHAP importance scores, similarity pairs, and why-Bell-Labs-worked findings. All records verified against Nobel Prize documentation, Bell System Technical Journal, IEEE/ACM archives, and institutional histories.",
+  "keywords": [
+    "machine learning",
+    "citation prediction",
+    "bell labs",
+    "research impact",
+    "science of science",
+    "co-authorship network",
+    "nlp",
+    "minhash",
+    "innovation",
+    "researcher archetypes",
+    "shap",
+    "gradient boosting"
+  ],
+  "resources": [
+    {
+      "path": "papers.csv",
+      "description": "71 Bell Labs publications \u2014 title, authors, year, abstract, citations, cluster, keywords"
+    },
+    {
+      "path": "researchers.csv",
+      "description": "56 researchers \u2014 department, career start/end, role, years_active"
+    },
+    {
+      "path": "researcher_profiles.csv",
+      "description": "Per-researcher ML features: centrality, career span, archetype, is_high_impact"
+    },
+    {
+      "path": "paper_hash_table.csv",
+      "description": "Paper fingerprints (SHA-256) and MinHash signatures for similarity search"
+    },
+    {
+      "path": "similar_paper_pairs.csv",
+      "description": "Top similar paper pairs by cosine similarity with cross-domain flag"
+    },
+    {
+      "path": "paper_similarity_matrix.csv",
+      "description": "Full 71\u00d771 cosine similarity matrix"
+    },
+    {
+      "path": "cluster_assignments.csv",
+      "description": "K-Means and hierarchical cluster labels per paper"
+    },
+    {
+      "path": "centrality_metrics.csv",
+      "description": "Betweenness, degree, eigenvector, composite centrality per researcher"
+    },
+    {
+      "path": "why_bell_labs_worked.json",
+      "description": "5 institutional findings with evidence \u2014 JSON"
+    },
+    {
+      "path": "dataset-metadata.json",
+      "description": "Kaggle dataset card"
+    }
+  ]
+}

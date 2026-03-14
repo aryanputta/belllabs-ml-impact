@@ -1,0 +1,12 @@
+paper_a,title_a,paper_b,title_b,similarity,same_cluster
+BL0062,Regular Expression Search Algorithm,BL0031,A Regular Expression Matcher,0.8643,True
+BL0047,The Future of Data Analysis,BL0048,Exploratory Data Analysis,0.7855,True
+BL0038,Electrical Disturbances Apparently of Extraterrest,BL0042,Radio Emission from Radio-Frequency Radiation,0.6479,True
+BL0035,Dielectric-Fiber Surface Waveguides for Optical Fr,BL0036,Low-Loss Optical Fiber,0.6458,True
+BL0035,Dielectric-Fiber Surface Waveguides for Optical Fr,BL0034,Optical Fiber Communications,0.6082,True
+BL0010,"The Transistor, A Semi-Conductor Triode",BL0060,Bipolar Junction Transistor Theory,0.608,True
+BL0054,Regenerative Current Action in Communications,BL0045,Telstar: First Active Communications Satellite,0.6078,False
+BL0025,MULTICS: The First Seven Years,BL0022,The UNIX Time-Sharing System,0.5925,True
+BL0010,"The Transistor, A Semi-Conductor Triode",BL0013,Electrons and Holes in Semiconductors,0.5887,True
+BL0044,Echo: America's First Communications Satellite,BL0045,Telstar: First Active Communications Satellite,0.5636,True
+BL0063,Sediment Deposition as Fractal Process,BL0050,The Fractal Geometry of Nature,0.558,True
