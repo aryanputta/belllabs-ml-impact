@@ -65,12 +65,6 @@ This installs requirements and runs all major analysis modules end-to-end.
 - **Model training code:** `src/ml/train.py` (with feature building in `src/ml/features.py`).
 - **Paper network + similarity code:** `src/similarity/paper_similarity.py` and `scripts/generate_cluster_hash_figures.py`.
 
-## Why `.env` if we already have `.gitignore`?
-
-- `.env` is where local secrets should live (API keys, tokens, credentials).
-- `.gitignore` makes sure those files are never committed by accident.
-- `SECURITY.md` documents additional branch-protection steps for GitHub.
-
 ## Repository Structure
 
 ```
