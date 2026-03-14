@@ -1,0 +1,41 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local secrets and env files
+.env
+.env.*
+*.pem
+*.key
+
+# Large/generated artifacts
+results/figures/*.pdf
+results/figures/*.svg
+
+# Keep key vector figures for paper narrative
+!results/figures/fig14_cluster_distribution.svg
+!results/figures/fig15_hash_similarity_graph.svg
+!results/figures/fig16_paper_flow_network.svg

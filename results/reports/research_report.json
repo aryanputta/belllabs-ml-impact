@@ -1,0 +1,281 @@
+{
+  "dataset": {
+    "n_papers": 71,
+    "year_min": 1928,
+    "year_max": 1986,
+    "n_domains": 8,
+    "domain_counts": {
+      "semiconductor_physics": 15,
+      "computing_systems": 13,
+      "information_theory": 12,
+      "mathematics_statistics": 8,
+      "radio_astronomy": 7,
+      "photonics_laser": 6,
+      "network_theory": 5,
+      "satellite_communications": 5
+    },
+    "top_authors_by_papers": [
+      [
+        "John Tukey",
+        7
+      ],
+      [
+        "Claude Shannon",
+        5
+      ],
+      [
+        "William Shockley",
+        5
+      ],
+      [
+        "John Pierce",
+        5
+      ],
+      [
+        "Ken Thompson",
+        5
+      ],
+      [
+        "Harry Nyquist",
+        4
+      ],
+      [
+        "Harald Friis",
+        4
+      ],
+      [
+        "Benoit Mandelbrot",
+        4
+      ],
+      [
+        "Rudolf Kompfner",
+        3
+      ],
+      [
+        "John Bardeen",
+        3
+      ]
+    ],
+    "top_authors_by_citations": [
+      [
+        "Claude Shannon",
+        164370.0
+      ],
+      [
+        "John Tukey",
+        57533.0
+      ],
+      [
+        "Dennis Ritchie",
+        50310.0
+      ],
+      [
+        "Alfred Aho",
+        36630.0
+      ],
+      [
+        "Brian Kernighan",
+        36203.0
+      ],
+      [
+        "Ken Thompson",
+        35230.0
+      ],
+      [
+        "Ravi Sethi",
+        31582.0
+      ],
+      [
+        "Jeffrey Ullman",
+        31582.0
+      ],
+      [
+        "Benoit Mandelbrot",
+        30352.0
+      ],
+      [
+        "John Bardeen",
+        28378.0
+      ]
+    ],
+    "top_papers": [
+      {
+        "paper_id": "BL0001",
+        "title": "A Mathematical Theory of Communication",
+        "citations": 145526,
+        "cluster": "information_theory"
+      },
+      {
+        "paper_id": "BL0028",
+        "title": "Compilers: Principles, Techniques, and Tools",
+        "citations": 31582,
+        "cluster": "computing_systems"
+      },
+      {
+        "paper_id": "BL0023",
+        "title": "The C Programming Language",
+        "citations": 29097,
+        "cluster": "computing_systems"
+      },
+      {
+        "paper_id": "BL0008",
+        "title": "An Algorithm for the Machine Calculation of Complex Fourier Series",
+        "citations": 21805,
+        "cluster": "information_theory"
+      },
+      {
+        "paper_id": "BL0050",
+        "title": "The Fractal Geometry of Nature",
+        "citations": 21611,
+        "cluster": "mathematics_statistics"
+      },
+      {
+        "paper_id": "BL0048",
+        "title": "Exploratory Data Analysis",
+        "citations": 20425,
+        "cluster": "mathematics_statistics"
+      },
+      {
+        "paper_id": "BL0022",
+        "title": "The UNIX Time-Sharing System",
+        "citations": 18489,
+        "cluster": "computing_systems"
+      },
+      {
+        "paper_id": "BL0017",
+        "title": "Absence of Diffusion in Certain Random Lattices",
+        "citations": 18418,
+        "cluster": "semiconductor_physics"
+      },
+      {
+        "paper_id": "BL0032",
+        "title": "Infrared and Optical Masers",
+        "citations": 17591,
+        "cluster": "photonics_laser"
+      },
+      {
+        "paper_id": "BL0010",
+        "title": "The Transistor, A Semi-Conductor Triode",
+        "citations": 16844,
+        "cluster": "semiconductor_physics"
+      }
+    ]
+  },
+  "similarity": {
+    "n_similar_pairs": 11,
+    "mean_similarity": 0.6428,
+    "max_similarity": 0.8643,
+    "same_cluster_share": 0.9091,
+    "n_hash_records": 71,
+    "unique_fingerprints": 71
+  },
+  "researchers": {
+    "n_researchers": 58,
+    "n_high_impact": 13,
+    "archetype_counts": {
+      "Domain Specialist": 40,
+      "Nobel / Turing Laureate": 10,
+      "Long-Horizon Researcher": 8
+    },
+    "top_researchers_by_total_citations": [
+      {
+        "name": "Claude Shannon",
+        "total_citations": 164370,
+        "archetype": "Long-Horizon Researcher"
+      },
+      {
+        "name": "John Tukey",
+        "total_citations": 57533,
+        "archetype": "Long-Horizon Researcher"
+      },
+      {
+        "name": "Dennis Ritchie",
+        "total_citations": 50310,
+        "archetype": "Nobel / Turing Laureate"
+      },
+      {
+        "name": "Alfred Aho",
+        "total_citations": 36630,
+        "archetype": "Long-Horizon Researcher"
+      },
+      {
+        "name": "Brian Kernighan",
+        "total_citations": 36203,
+        "archetype": "Long-Horizon Researcher"
+      },
+      {
+        "name": "Ken Thompson",
+        "total_citations": 35230,
+        "archetype": "Nobel / Turing Laureate"
+      },
+      {
+        "name": "Jeffrey Ullman",
+        "total_citations": 31582,
+        "archetype": "Domain Specialist"
+      },
+      {
+        "name": "Ravi Sethi",
+        "total_citations": 31582,
+        "archetype": "Domain Specialist"
+      },
+      {
+        "name": "Benoit Mandelbrot",
+        "total_citations": 30352,
+        "archetype": "Long-Horizon Researcher"
+      },
+      {
+        "name": "John Bardeen",
+        "total_citations": 28378,
+        "archetype": "Nobel / Turing Laureate"
+      }
+    ]
+  },
+  "ml": {
+    "status": "available",
+    "n_models": 5,
+    "best_model": {
+      "model": "Gradient Boosting",
+      "auc_mean": "0.674",
+      "f1_mean": "0.668",
+      "acc_mean": "0.65",
+      "source": "README reported benchmark"
+    },
+    "all_models": [
+      {
+        "model": "Gradient Boosting",
+        "auc_mean": "0.674",
+        "f1_mean": "0.668",
+        "acc_mean": "0.65",
+        "source": "README reported benchmark"
+      },
+      {
+        "model": "Logistic Regression",
+        "auc_mean": "0.646",
+        "f1_mean": "0.551",
+        "acc_mean": "0.52",
+        "source": "README reported benchmark"
+      },
+      {
+        "model": "XGBoost",
+        "auc_mean": "0.578",
+        "f1_mean": "0.578",
+        "acc_mean": "0.54",
+        "source": "README reported benchmark"
+      },
+      {
+        "model": "SVM (RBF)",
+        "auc_mean": "0.566",
+        "f1_mean": "0.507",
+        "acc_mean": "0.45",
+        "source": "README reported benchmark"
+      },
+      {
+        "model": "Random Forest",
+        "auc_mean": "0.540",
+        "f1_mean": "0.539",
+        "acc_mean": "0.49",
+        "source": "README reported benchmark"
+      }
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "status": "precomputed",
+  "note": "These metrics are taken from README reported results. Recompute with `python -m src.ml.train` in a dependency-enabled environment.",
+  "n_models": 5
+}

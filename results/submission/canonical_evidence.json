@@ -1,0 +1,74 @@
+{
+  "bundle_version": "v1.0",
+  "intent": "Two canonical outputs for paper citation with emphasis on ML + hash/similarity + clustering.",
+  "canonical_files": [
+    "results/submission/canonical_evidence_table.csv",
+    "results/submission/canonical_evidence.json"
+  ],
+  "ml": {
+    "models_reported": 5,
+    "best_model": {
+      "model": "Gradient Boosting",
+      "auc_mean": "0.674",
+      "f1_mean": "0.668",
+      "acc_mean": "0.65",
+      "source": "README reported benchmark"
+    }
+  },
+  "hash_similarity": {
+    "n_hash_records": 71,
+    "n_similar_pairs": 11,
+    "mean_similarity": 0.6428,
+    "max_similarity": 0.8643,
+    "same_cluster_share": 0.9091,
+    "top_pair": {
+      "paper_a": "BL0062",
+      "title_a": "Regular Expression Search Algorithm",
+      "paper_b": "BL0031",
+      "title_b": "A Regular Expression Matcher",
+      "similarity": "0.8643",
+      "same_cluster": "True"
+    }
+  },
+  "clusters": {
+    "n_clusters": 8,
+    "cluster_counts": {
+      "semiconductor_physics": 15,
+      "computing_systems": 13,
+      "information_theory": 12,
+      "mathematics_statistics": 8,
+      "radio_astronomy": 7,
+      "photonics_laser": 6,
+      "network_theory": 5,
+      "satellite_communications": 5
+    }
+  },
+  "figures_for_paper": [
+    "results/figures/fig11_researcher_success.png",
+    "results/figures/fig12_similarity_heatmap.png",
+    "results/figures/fig13_researcher_archetypes.png",
+    "results/figures/fig14_cluster_distribution.svg",
+    "results/figures/fig15_hash_similarity_graph.svg",
+    "results/figures/fig16_paper_flow_network.svg"
+  ],
+  "data_sanity": {
+    "dataset": "data/processed/papers.csv",
+    "n_rows": 71,
+    "required_columns_missing": [],
+    "duplicate_paper_ids": 0,
+    "invalid_year_rows": 0,
+    "invalid_citation_rows": 0,
+    "empty_title_rows": 0,
+    "domain_counts": {
+      "semiconductor_physics": 15,
+      "computing_systems": 13,
+      "information_theory": 12,
+      "mathematics_statistics": 8,
+      "radio_astronomy": 7,
+      "photonics_laser": 6,
+      "network_theory": 5,
+      "satellite_communications": 5
+    },
+    "status": "pass"
+  }
+}
