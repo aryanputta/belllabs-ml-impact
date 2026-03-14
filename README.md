@@ -2,7 +2,7 @@
 
 **Where Does Innovation Come From? A Machine Learning Analysis of Bell Laboratories (1928–1986)**
 
-*Aryan Singh — Rutgers University CS · Benjamin Lowe — Seton Hall University (former Director, Bell Labs North America)*
+*Aryan Putta — Rutgers University CS · Benjamin Lowe — Seton Hall University (former Director, Bell Labs North America)*
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -156,9 +156,9 @@ Target venues: **Scientometrics**, **PLOS ONE**, **IEEE Access**, **Journal of I
 ## Citation
 
 ```bibtex
-@article{singh2024belllabs,
+@article{putta2024belllabs,
   title   = {Where Does Innovation Come From? A Machine Learning Analysis of Bell Laboratories (1928--1986)},
-  author  = {Singh, Aryan and Lowe, Benjamin},
+  author  = {Putta, Aryan and Lowe, Benjamin},
   journal = {Scientometrics},
   year    = {2024},
   note    = {Under review}
