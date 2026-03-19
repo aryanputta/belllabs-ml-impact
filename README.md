@@ -66,12 +66,6 @@ This installs requirements and runs all major analysis modules end-to-end.
 - **Model training code:** `src/ml/train.py` (with feature building in `src/ml/features.py`).
 - **Paper network + similarity code:** `src/similarity/paper_similarity.py` and `scripts/generate_cluster_hash_figures.py`.
 
-## Why `.env` if we already have `.gitignore`?
-
-- `.env` is where local secrets should live (API keys, tokens, credentials).
-- `.gitignore` makes sure those files are never committed by accident.
-- `SECURITY.md` documents additional branch-protection steps for GitHub.
-
 ## Repository Structure
 
 ```
@@ -234,18 +228,6 @@ Verified against Nobel Prize records, Bell System Technical Journal, IEEE/ACM ar
 
 ---
 
-## Paper
-
-`paper/paper.tex` — IEEE two-column format, 5 RQs, 13 figures embedded, ready to compile.
-
-```bash
-cd paper && pdflatex paper.tex && bibtex paper && pdflatex paper.tex && pdflatex paper.tex
-```
-
-Target venues: **Scientometrics**, **PLOS ONE**, **IEEE Access**, **Journal of Informetrics**
-
----
-
 ## Citation
 
 ```bibtex
@@ -272,4 +254,4 @@ git remote add origin https://github.com/aryanputta/belllabs-ml-impact.git
 git push -u origin main
 ```
 
-Replace `aryanputta` with your GitHub handle everywhere before pushing.
+l
