@@ -8,6 +8,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Kaggle Dataset](https://img.shields.io/badge/Kaggle-Dataset-20BEFF)](https://kaggle.com/datasets/aryanputta/bell-labs-research-corpus)
 [![Kaggle Notebook](https://img.shields.io/badge/Kaggle-Notebook-20BEFF)](https://kaggle.com/aryanputta/bell-labs-ml-analysis)
+[![Paper Page](https://img.shields.io/badge/Paper-aryanputta.com-C9AA71)](https://aryanputta.com/papers/bell-labs-innovation-ml-analysis.html)
+[![PDF](https://img.shields.io/badge/PDF-Read-111111)](https://aryanputta.com/assets/papers/bell-labs-innovation-ml-analysis.pdf)
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/YOUR-NOTEBOOK-ID)
 
 ---
@@ -15,6 +17,12 @@
 ## What This Repo Is
 
 This is the full reproducible codebase for our paper applying ML to Bell Labs' publication record (71 papers, 1928–1986) to answer: what made Bell Labs produce so many breakthroughs, and can we measure it?
+
+Paper and portfolio links:
+
+- Paper page: https://aryanputta.com/papers/bell-labs-innovation-ml-analysis.html
+- PDF: https://aryanputta.com/assets/papers/bell-labs-innovation-ml-analysis.pdf
+- Portfolio: https://aryanputta.com/
 
 **Five questions, five answers:**
 
